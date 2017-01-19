@@ -1,0 +1,3 @@
+rootProject.name = 'directionsApp'
+
+include ':app'
