@@ -6,6 +6,7 @@ import { Actions } from 'react-native-router-flux';
 import Emoji from 'react-native-emoji';
 import { CardSection } from './common/CardSection';
 import TouchableEmoji from './TouchableEmoji';
+import { vh } from '../utility/StyleUtility';
 import ScorePage from './ScorePage';
 import sagaOne from '../sagas/SagaOne';
 import {
@@ -57,9 +58,16 @@ class Game extends Component {
   // TODO fix the key below as it is bad practice
   render() {
     const { i, score } = this.props;
+
     if (i === sagaOne.length) {
       return <ScorePage score={score} total={sagaOne.length} />
     }
+
+    // hacky way to size up emojis for screen
+    const h = 1/(sagaOne[i].emojis.length + 2.5)
+    const emojiHeight = vh(h)
+
+    console.log("emojiHeight", emojiHeight)
 
     return (
       <View>
@@ -72,6 +80,7 @@ class Game extends Component {
               <TouchableEmoji
                 key={iterator}
                 name={emojiName}
+                emojiHeight={emojiHeight}
                 onEmojiPress={this.onEmojiPress.bind(this)}
                 />
             )
@@ -81,6 +90,15 @@ class Game extends Component {
     )
   }
 }
+
+
+// function vw(percentageWidth) {
+//   return Dimensions.get('window').width * (percentageWidth);
+// }
+//
+// function vh(percentageHeight) {
+//   return Dimensions.get('window').height * (percentageHeight);
+// }
 
 const mapStateToProps = (state) => {
   return {
