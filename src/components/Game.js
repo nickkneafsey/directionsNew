@@ -79,6 +79,7 @@ class Game extends Component {
             return (
               <TouchableEmoji
                 key={iterator}
+                index={iterator}
                 name={emojiName}
                 emojiHeight={emojiHeight}
                 onEmojiPress={this.onEmojiPress.bind(this)}
