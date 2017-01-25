@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
+import { CardSection } from './common';
 import DonutChart from './DonutChart';
 
 class ScorePage extends Component {
@@ -11,25 +12,27 @@ class ScorePage extends Component {
     const { score, total } = this.props;
     const incorrect = parseInt(total) - parseInt(score);
     const correct = parseInt(score);
-    console.log(correct, incorrect)
+    const data = [
+      {
+        "name": "correct",
+        "total": correct
+      },
+      {
+        "name": "incorrect",
+        "total": incorrect
+      }
+    ];
 
     return (
       <View>
-        <Text>{`Score: ${score} out of ${total}`}</Text>
-        <Text>{`${this.calculateScore(score, total)}%`}</Text>
+        <CardSection>
+          <Text>{`Score: ${score} out of ${total}`}</Text>
+        </CardSection>
+        <CardSection>
+          <Text>{`${this.calculateScore(score, total)}%`}</Text>
+        </CardSection>
         <DonutChart
-          data={
-            [
-              {
-                "name": "correct",
-                "total": correct
-              },
-              {
-                "name": "incorrect",
-                "total": incorrect
-              }
-            ]
-          }
+          data={data}
         />
       </View>
     )

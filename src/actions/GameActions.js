@@ -13,6 +13,13 @@ export const incrementQuestionIterator = () => {
   };
 };
 
+export const RESET_QUESTION_ITERATOR = 'RESET_QUESTION_ITERATOR';
+export const resetQuestionIterator = () => {
+  return {
+    type: RESET_QUESTION_ITERATOR
+  };
+};
+
 export const CLEAR_ANSWER_ARRAY = 'CLEAR_ANSWER_ARRAY';
 export const clearAnswerArray = () => {
   return {
@@ -24,12 +31,12 @@ export const INCREMENT_SCORE = 'INCREMENT_SCORE';
 export const incrementScore = () => {
   return {
     type: INCREMENT_SCORE
-  }
+  };
 };
 
 export const RESET_SCORE = 'RESET_SCORE';
 export const resetScore = () => {
   return {
     type: RESET_SCORE
-  }
+  };
 };

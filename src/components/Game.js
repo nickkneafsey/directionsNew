@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { View, Text } from 'react-native';
+import { View, ScrollView, Text } from 'react-native';
 import _ from 'lodash';
 import { Actions } from 'react-native-router-flux';
 import Emoji from 'react-native-emoji';
-import { CardSection } from './common/CardSection';
+import { CardSection, Button } from './common';
 import TouchableEmoji from './TouchableEmoji';
 import { vh } from '../utility/StyleUtility';
 import ScorePage from './ScorePage';
@@ -12,6 +12,7 @@ import sagaOne from '../sagas/SagaOne';
 import {
   addToAnswerArray,
   incrementQuestionIterator,
+  resetQuestionIterator,
   clearAnswerArray,
   incrementScore,
   resetScore
@@ -20,6 +21,12 @@ import {
 class Game extends Component {
   componentWillReceiveProps(nextProps) {
     this.checkForWinner(nextProps.answerArray, nextProps.i);
+  }
+
+  componentDidMount() {
+    if (this.props.i === sagaOne.length) {
+      this.props.resetQuestionIterator()
+    }
   }
 
   checkForWinner(answer, i) {
@@ -70,36 +77,34 @@ class Game extends Component {
     console.log("emojiHeight", emojiHeight)
 
     return (
-      <View>
+      <View style={{flex: 1}}>
+        <ScrollView>
+          <CardSection>
+            <Text>{sagaOne[i].directions}</Text>
+          </CardSection>
+          {
+            sagaOne[i].emojis.map((emojiName, iterator) => {
+              return (
+                <TouchableEmoji
+                  key={iterator}
+                  index={iterator}
+                  name={emojiName}
+                  emojiHeight={emojiHeight}
+                  onEmojiPress={this.onEmojiPress.bind(this)}
+                  />
+              )
+            })
+          }
+        </ScrollView>
         <CardSection>
-          <Text>{sagaOne[i].directions}</Text>
+          <Button onPress={this.props.clearAnswerArray.bind(this)}>
+            Reset Answers
+          </Button>
         </CardSection>
-        {
-          sagaOne[i].emojis.map((emojiName, iterator) => {
-            return (
-              <TouchableEmoji
-                key={iterator}
-                index={iterator}
-                name={emojiName}
-                emojiHeight={emojiHeight}
-                onEmojiPress={this.onEmojiPress.bind(this)}
-                />
-            )
-          })
-        }
       </View>
     )
   }
 }
-
-
-// function vw(percentageWidth) {
-//   return Dimensions.get('window').width * (percentageWidth);
-// }
-//
-// function vh(percentageHeight) {
-//   return Dimensions.get('window').height * (percentageHeight);
-// }
 
 const mapStateToProps = (state) => {
   return {
@@ -112,6 +117,7 @@ const mapStateToProps = (state) => {
 export default connect(mapStateToProps, {
   addToAnswerArray,
   incrementQuestionIterator,
+  resetQuestionIterator,
   clearAnswerArray,
   incrementScore,
   resetScore
