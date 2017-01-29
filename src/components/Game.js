@@ -74,8 +74,6 @@ class Game extends Component {
     const h = 1/(sagaOne[i].emojis.length + 2.5)
     const emojiHeight = vh(h)
 
-    console.log("emojiHeight", emojiHeight)
-
     return (
       <View style={{flex: 1}}>
         <ScrollView>

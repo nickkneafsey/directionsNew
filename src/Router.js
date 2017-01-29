@@ -3,6 +3,7 @@ import { Scene, Router, Actions } from 'react-native-router-flux'
 import AgeMenu from './components/AgeMenu';
 import TopicMenu from './components/TopicMenu';
 import Game from './components/Game';
+import Splash from './components/Splash';
 
 const RouterComponent = () => (
   <Router
@@ -10,19 +11,27 @@ const RouterComponent = () => (
     navigationBarStyle={styles.navBar}
     titleStyle={styles.navBarTitle}
     barButtonTextStyle={styles.barButtonTextStyle}
-    barButtonIconStyle={styles.barButtonIconStyle}>
+    barButtonIconStyle={styles.barButtonIconStyle}
+    hideNavBar={false}>
     <Scene key="main">
       <Scene
-        key="ageMenu"
-        component={AgeMenu}
-        title="Select An Age Group"
+        sceneStyle={{ paddingTop: 0 }}
+        key="splash"
+        component={Splash}
+        hideNavBar={true}
         initial
       />
 
       <Scene
-      key="topicMenu"
-      component={TopicMenu}
-      title="Topic"
+        key="ageMenu"
+        component={AgeMenu}
+        title="Select An Age Group"
+      />
+
+      <Scene
+        key="topicMenu"
+        component={TopicMenu}
+        title="Topic"
       />
 
       <Scene
