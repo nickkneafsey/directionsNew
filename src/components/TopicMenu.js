@@ -1,20 +1,35 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { View } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import MenuItem from './MenuItem';
+import { updateSelectedTopic } from '../actions/TopicActions';
 
 class TopicMenu extends Component {
-  onRowPress() {
+  onRowPress(topic) {
+    this.props.updateSelectedTopic(topic)
     Actions.game();
   }
 
   render () {
     return (
       <View>
-        <MenuItem onRowPress={this.onRowPress} text={"All Topics"} />
+        {
+          this.props.topics.map((topic) => (
+            <MenuItem onRowPress={() => this.onRowPress(topic)} key={topic} text={topic} />
+          ))
+        }
       </View>
     )
   }
 }
 
-export default TopicMenu;
+const mapStateToProps = (state) => {
+  return {
+    topics: state.topic.topics
+  }
+}
+
+export default connect(mapStateToProps, {
+  updateSelectedTopic
+})(TopicMenu);

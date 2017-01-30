@@ -108,7 +108,8 @@ const mapStateToProps = (state) => {
   return {
     answerArray: state.game.answerArray,
     i: state.game.questionIterator,
-    score: state.game.score
+    score: state.game.score,
+    selectedTopic: state.topic.selectedTopic
   }
 };
 

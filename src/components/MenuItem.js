@@ -5,7 +5,7 @@ import { CardSection } from './common';
 const MenuItem = ({ onRowPress, text }) => {
   return (
     <View>
-      <TouchableWithoutFeedback onPress={onRowPress.bind(this)}>
+      <TouchableWithoutFeedback onPress={onRowPress}>
         <View>
           <CardSection>
             <Text>
