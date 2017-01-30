@@ -8,7 +8,7 @@ import { CardSection, Button } from './common';
 import TouchableEmoji from './TouchableEmoji';
 import { vh } from '../utility/StyleUtility';
 import ScorePage from './ScorePage';
-import sagaOne from '../sagas/SagaOne';
+import * as Sagas from '../sagas'
 import {
   addToAnswerArray,
   incrementQuestionIterator,
@@ -24,7 +24,7 @@ class Game extends Component {
   }
 
   componentDidMount() {
-    if (this.props.i === sagaOne.length) {
+    if (this.props.i === Sagas[this.props.selectedTopicSaga].length) {
       this.props.resetQuestionIterator()
     }
   }
@@ -35,20 +35,20 @@ class Game extends Component {
       this.props.resetScore();
     }
 
-    if (i === sagaOne.length) {
+    if (i === Sagas[this.props.selectedTopicSaga].length) {
       // Show score page
       this.render();
     } else {
       console.log("Answer Array", answer);
       console.log("i", i);
-      console.log("correct answer", sagaOne[i].correctAnswer);
-      if (_.isEqual(sagaOne[i].correctAnswer, answer)) {
+      console.log("correct answer", Sagas[this.props.selectedTopicSaga][i].correctAnswer);
+      if (_.isEqual(Sagas[this.props.selectedTopicSaga][i].correctAnswer, answer)) {
         console.log("Correct");
         this.props.incrementQuestionIterator();
         this.props.clearAnswerArray();
         this.props.incrementScore();
         this.render();
-      } else if (sagaOne[i].correctAnswer.length === answer.length) {
+      } else if (Sagas[this.props.selectedTopicSaga][i].correctAnswer.length === answer.length) {
         console.log("Incorrect");
         this.props.incrementQuestionIterator();
         this.props.clearAnswerArray();
@@ -66,22 +66,22 @@ class Game extends Component {
   render() {
     const { i, score } = this.props;
 
-    if (i === sagaOne.length) {
-      return <ScorePage score={score} total={sagaOne.length} />
+    if (i === Sagas[this.props.selectedTopicSaga].length) {
+      return <ScorePage score={score} total={Sagas[this.props.selectedTopicSaga].length} />
     }
 
     // hacky way to size up emojis for screen
-    const h = 1/(sagaOne[i].emojis.length + 2.5)
+    const h = 1/(Sagas[this.props.selectedTopicSaga][i].emojis.length + 2.5)
     const emojiHeight = vh(h)
 
     return (
       <View style={{flex: 1}}>
         <ScrollView>
           <CardSection>
-            <Text>{sagaOne[i].directions}</Text>
+            <Text>{Sagas[this.props.selectedTopicSaga][i].directions}</Text>
           </CardSection>
           {
-            sagaOne[i].emojis.map((emojiName, iterator) => {
+            Sagas[this.props.selectedTopicSaga][i].emojis.map((emojiName, iterator) => {
               return (
                 <TouchableEmoji
                   key={iterator}
@@ -105,11 +105,19 @@ class Game extends Component {
 }
 
 const mapStateToProps = (state) => {
+  let selectedTopicSaga;
+  switch(state.topic.selectedTopic) {
+    case "Before and After":
+      selectedTopicSaga = "beforeAndAfter";
+    default:
+      selectedTopicSaga = "sagaOne";
+  }
+
   return {
     answerArray: state.game.answerArray,
     i: state.game.questionIterator,
     score: state.game.score,
-    selectedTopic: state.topic.selectedTopic
+    selectedTopicSaga
   }
 };
 

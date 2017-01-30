@@ -1,4 +1,4 @@
-export default sagaOne =  [
+const sagaOne =  [
   {
     emojis: [ "peach", "watermelon", "strawberry", "pear", "apple", "banana" ],
     directions: "Touch the strawberry",
@@ -65,6 +65,6 @@ export default sagaOne =  [
     correctAnswer: [ 0, 4, 2 ]
   }
 
-
-
 ];
+
+export { sagaOne };
