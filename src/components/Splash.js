@@ -7,7 +7,7 @@ class Splash extends Component {
   navigate() {
     Actions.ageMenu();
   }
-  
+
   render() {
     return (
       <View style={styles.main}>
@@ -38,7 +38,8 @@ var styles = {
   },
   bgImage: {
     flex: 1,
-    resizeMode: "cover"
+    resizeMode: 'repeat'
+    // 'cover', 'contain', 'stretch', 'repeat', 'center'
   },
   welcome: {
     textAlign: 'center',
