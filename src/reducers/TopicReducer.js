@@ -26,8 +26,12 @@ const determineSagas = (topic) => {
   switch(topic) {
     case "Before and After":
       sagas = Sagas['beforeAndAfter'];
+      break;
+    case "All Topics":
+      sagas = _.concat(Sagas['beforeAndAfter'], Sagas['sagaOne']);
+      break;
     default:
-      sagas = Sagas['sagaOne']
+      sagas = Sagas['sagaOne'];
   }
   return _.shuffle(sagas);
 };
