@@ -27,6 +27,12 @@ const determineSagas = (topic) => {
     case "Before and After":
       sagas = Sagas['beforeAndAfter'];
       break;
+    case "Sequences":
+      sagas = Sagas['sequences'];
+      break;
+    case "Order":
+      sagas = Sagas['order'];
+      break;
     case "All Topics":
       sagas = _.concat(Sagas['beforeAndAfter'], Sagas['sagaOne']);
       break;

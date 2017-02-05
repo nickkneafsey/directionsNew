@@ -3,10 +3,12 @@ import { connect } from 'react-redux';
 import { View } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import MenuItem from './MenuItem';
+import { resetQuestionIterator } from '../actions/GameActions';
 import { updateSelectedTopic } from '../actions/TopicActions';
 
 class TopicMenu extends Component {
   onRowPress(topic) {
+    this.props.resetQuestionIterator();
     this.props.updateSelectedTopic(topic)
     Actions.game();
   }
@@ -31,5 +33,6 @@ const mapStateToProps = (state) => {
 }
 
 export default connect(mapStateToProps, {
-  updateSelectedTopic
+  updateSelectedTopic,
+  resetQuestionIterator
 })(TopicMenu);
