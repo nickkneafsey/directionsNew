@@ -15,7 +15,7 @@ class Splash extends Component {
           <Image source={require('../../assets/pencils.jpg')} style={styles.bgImage} />
         </View>
         <Text></Text>
-        <Text style={styles.welcome}>Hi Guys</Text>
+        <Text style={styles.welcome}>TapAlong!</Text>
         <CardSection style={styles.buttonContanerStyle}>
           <Button onPress={this.navigate.bind(this)}>Start</Button>
         </CardSection>

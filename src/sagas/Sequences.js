@@ -11,7 +11,7 @@ const sequences =  [
   },
   {
     emojis: [ "poultry_leg", "rice", "sweet_potato", "fries", "meat_on_bone" ],
-    directions: "Touch all of the meats from bottom to top of the screen",
+    directions: "Touch all of the meats from the bottom of the screen to the top.",
     correctAnswer: [ 0, 4 ]
   },
   {
@@ -43,8 +43,37 @@ const sequences =  [
     emojis: [ "red_circle", "hankey", "spider",  "joy", "hankey" ],
     directions: "Touch all of the poopies from top to bottom.",
     correctAnswer: [ 1, 4 ]
+  },
+  {
+    emojis: [ "hearts", "spades", "diamonds", "clubs" ],
+    directions: "Touch all of the red shapes from top to bottom.",
+    correctAnswer: [ 0, 2 ]
+  },
+  {
+    emojis: [ "baseball", "soccer", "basketball", "football", "tennis" ],
+    directions: "Touch all of the balls from top to bottom except for the soccer ball.",
+    correctAnswer: [ 0, 2, 3, 4 ]
+  },
+  {
+    emojis: [ "pizza", "fries", "icecream", "doughnut" ],
+    directions: "Touch the ice cream, then touch the fries",
+    correctAnswer: [ 2, 1 ]
+  },
+  {
+    emojis: [ "heart", "heart", "heart", "star", "star", "star" ],
+    directions: "Touch the first heart, then the middle star",
+    correctAnswer: [ 0, 4 ]
+  },
+  {
+    emojis: [ "star", "star", "star", "star", "star" ],
+    directions: "Touch the first and last star, then touch the middle star",
+    correctAnswer: [ 0, 4, 2 ]
+  },
+  {
+    emojis: [ "hotdog", "taco", "hamburger", "pizza" ],
+    directions: "Touch the hotdog",
+    correctAnswer: [ 0 ]
   }
-
 
 ];
 

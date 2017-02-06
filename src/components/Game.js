@@ -70,7 +70,7 @@ class Game extends Component {
     }
 
     // hacky way to size up emojis for screen
-    const h = 1/(this.props.sagas[i].emojis.length + 2.5)
+    const h = 1/(this.props.sagas[i].emojis.length + 3)
     const emojiHeight = vh(h)
 
     return (
