@@ -6,6 +6,7 @@ import { Actions } from 'react-native-router-flux';
 import Emoji from 'react-native-emoji';
 import { CardSection, Button } from './common';
 import TouchableEmoji from './TouchableEmoji';
+import SelectionsRow from './SelectionsRow';
 import { vh } from '../utility/StyleUtility';
 import ScorePage from './ScorePage';
 import {
@@ -70,7 +71,7 @@ class Game extends Component {
     }
 
     // hacky way to size up emojis for screen
-    const h = 1/(this.props.sagas[i].emojis.length + 3)
+    const h = 1/(this.props.sagas[i].emojis.length + 4)
     const emojiHeight = vh(h)
 
     return (
@@ -93,6 +94,12 @@ class Game extends Component {
             })
           }
         </ScrollView>
+        <CardSection>
+          <SelectionsRow
+            selections={this.props.answerArray}
+            emojis={this.props.sagas[i].emojis}
+          />
+        </CardSection>
         <CardSection>
           <Button onPress={this.props.clearAnswerArray.bind(this)}>
             Reset Answers

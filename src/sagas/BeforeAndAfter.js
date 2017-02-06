@@ -72,7 +72,7 @@ const beforeAndAfter =  [
   {
     emojis: [ "file_cabinet", "card_file_box", "spiral_note_pad", "printer", "wastebasket" ],
     directions: "Touch the item in the sequence that comes right before the trash can.",
-    correctAnswer: [ 2, 1 ]
+    correctAnswer: [ 3 ]
   }
 ]
 
