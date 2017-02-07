@@ -13,6 +13,7 @@ const RouterComponent = () => (
     barButtonTextStyle={styles.barButtonTextStyle}
     barButtonIconStyle={styles.barButtonIconStyle}
     hideNavBar={false}>
+    
     <Scene key="main">
       <Scene
         sceneStyle={{ paddingTop: 0 }}
@@ -31,7 +32,7 @@ const RouterComponent = () => (
       <Scene
         key="topicMenu"
         component={TopicMenu}
-        title="Topic"
+        title="Select a Topic"
       />
 
       <Scene

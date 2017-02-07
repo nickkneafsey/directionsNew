@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
-import { CardSection } from './common';
+import { View } from 'react-native';
+import { CardSection, BigText } from './common';
 import DonutChart from './DonutChart';
 
 class ScorePage extends Component {
@@ -26,10 +26,10 @@ class ScorePage extends Component {
     return (
       <View>
         <CardSection>
-          <Text>{`Score: ${score} out of ${total}`}</Text>
+          <BigText>{`Score: ${score} out of ${total}`}</BigText>
         </CardSection>
         <CardSection>
-          <Text>{`${this.calculateScore(score, total)}%`}</Text>
+          <BigText>{`${this.calculateScore(score, total)}%`}</BigText>
         </CardSection>
         <DonutChart
           data={data}

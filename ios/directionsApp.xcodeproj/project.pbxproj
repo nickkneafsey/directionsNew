@@ -894,6 +894,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = directionsApp;
+				TARGETED_DEVICE_FAMILY = 2;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -911,6 +912,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = directionsApp;
+				TARGETED_DEVICE_FAMILY = 2;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;

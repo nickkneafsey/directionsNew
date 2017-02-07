@@ -1,6 +1,6 @@
 import React from 'react';
-import { TouchableWithoutFeedback, Text, View } from 'react-native'
-import { CardSection } from './common';
+import { TouchableWithoutFeedback, View } from 'react-native';
+import { CardSection, BigText } from './common';
 
 const MenuItem = ({ onRowPress, text }) => {
   return (
@@ -8,9 +8,9 @@ const MenuItem = ({ onRowPress, text }) => {
       <TouchableWithoutFeedback onPress={onRowPress}>
         <View>
           <CardSection>
-            <Text>
+            <BigText>
               {text}
-            </Text>
+            </BigText>
           </CardSection>
         </View>
       </TouchableWithoutFeedback>

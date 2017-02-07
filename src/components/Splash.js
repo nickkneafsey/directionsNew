@@ -38,7 +38,7 @@ var styles = {
   },
   bgImage: {
     flex: 1,
-    resizeMode: 'repeat'
+    resizeMode: 'cover'
     // 'cover', 'contain', 'stretch', 'repeat', 'center'
   },
   welcome: {

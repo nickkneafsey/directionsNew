@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { View, ScrollView, Text } from 'react-native';
+import { View, ScrollView } from 'react-native';
 import _ from 'lodash';
 import { Actions } from 'react-native-router-flux';
 import Emoji from 'react-native-emoji';
-import { CardSection, Button } from './common';
+import { CardSection, Button, BigText } from './common';
 import TouchableEmoji from './TouchableEmoji';
 import SelectionsRow from './SelectionsRow';
 import { vh } from '../utility/StyleUtility';
@@ -19,6 +19,16 @@ import {
 } from '../actions/GameActions';
 
 class Game extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      x: 0,
+      y: 0,
+      height: 0,
+      width: 0
+    };
+  }
+
   componentWillReceiveProps(nextProps) {
     this.checkForWinner(nextProps.answerArray, nextProps.i);
   }
@@ -62,6 +72,11 @@ class Game extends Component {
     this.props.addToAnswerArray(name);
   }
 
+  onLayout(event) {
+    const { x, y, width, height } = event.nativeEvent.layout;
+    this.setState({ x, y, width, height })
+  }
+
   // TODO fix the key below as it is bad practice
   render() {
     const { i, score } = this.props;
@@ -71,14 +86,15 @@ class Game extends Component {
     }
 
     // hacky way to size up emojis for screen
-    const h = 1/(this.props.sagas[i].emojis.length + 4)
-    const emojiHeight = vh(h)
+    // const h = 1/(this.props.sagas[i].emojis.length + 4)
+    // const emojiHeight = vh(h)
+    const emojiHeight = (this.state.height) / (this.props.sagas[i].emojis.length + 2);
 
     return (
       <View style={{flex: 1}}>
-        <ScrollView>
+        <ScrollView onLayout={this.onLayout.bind(this)}>
           <CardSection>
-            <Text>{this.props.sagas[i].directions}</Text>
+            <BigText>{this.props.sagas[i].directions}</BigText>
           </CardSection>
           {
             this.props.sagas[i].emojis.map((emojiName, iterator) => {
