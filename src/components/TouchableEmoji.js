@@ -11,12 +11,4 @@ const TouchableEmoji = (props) => (
   </TouchableOpacity>
 );
 
-// const TouchableEmoji = (props) => (
-//   <TouchableOpacity
-//     style={{width: props.emojiHeight}}
-//     onPress={ () => props.onEmojiPress(props.name) }>
-//       <Emoji name={props.name} />
-//   </TouchableOpacity>
-// );
-
 export default TouchableEmoji;

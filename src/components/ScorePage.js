@@ -2,10 +2,22 @@ import React, { Component } from 'react';
 import { View } from 'react-native';
 import { CardSection, BigText } from './common';
 import DonutChart from './DonutChart';
+import Emoji from 'react-native-emoji';
 
 class ScorePage extends Component {
   calculateScore(score, total) {
     return parseInt(parseInt(score) / parseInt(total) * 100)
+  }
+  renderChartOrEmoji(score, total, data) {
+    if (score === total) {
+      return (
+        <BigText style={{ fontSize: 100, textAlign: 'center' }}>
+          <Emoji name={'tada'} />
+        </BigText>
+      )
+    } else {
+      return <DonutChart data={data} />
+    }
   }
 
   render() {
@@ -31,9 +43,9 @@ class ScorePage extends Component {
         <CardSection>
           <BigText>{`${this.calculateScore(score, total)}%`}</BigText>
         </CardSection>
-        <DonutChart
-          data={data}
-        />
+        {
+          this.renderChartOrEmoji(score, total, data)
+        }
       </View>
     )
   }
