@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
+import _ from 'lodash';
 import { CardSection, BigText } from './common';
 import DonutChart from './DonutChart';
 import Emoji from 'react-native-emoji';
@@ -8,12 +9,30 @@ class ScorePage extends Component {
   calculateScore(score, total) {
     return parseInt(parseInt(score) / parseInt(total) * 100)
   }
+
+  generatePraise() {
+    return _.sample(["Great Job!", "Nice!", "Super!", "Woo!", "Well Done!"]);
+  }
+
   renderChartOrEmoji(score, total, data) {
     if (score === total) {
       return (
-        <BigText style={{ fontSize: 100, textAlign: 'center' }}>
-          <Emoji name={'tada'} />
-        </BigText>
+        <View>
+          <BigText style={{ fontSize: 65, textAlign: 'center' }}> </BigText>
+          <BigText style={{ fontSize: 65, textAlign: 'center' }}>
+             <Emoji name={'tada'} />
+             <Emoji name={'tada'} />
+             <Emoji name={'tada'} />
+          </BigText>
+          <BigText style={{ fontSize: 65, textAlign: 'center' }}>
+             { this.generatePraise() }
+          </BigText>
+          <BigText style={{ fontSize: 65, textAlign: 'center' }}>
+             <Emoji name={'tada'} />
+             <Emoji name={'tada'} />
+             <Emoji name={'tada'} />
+          </BigText>
+        </View>
       )
     } else {
       return <DonutChart data={data} />
@@ -48,6 +67,14 @@ class ScorePage extends Component {
         }
       </View>
     )
+  }
+}
+
+const styles = {
+  textStyles: {
+    fontSize: 65,
+    textAlign: 'center',
+    fontFamily: 'Futura'
   }
 }
 

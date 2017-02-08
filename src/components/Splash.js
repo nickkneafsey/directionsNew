@@ -24,7 +24,7 @@ class Splash extends Component {
   }
 }
 
-var styles = {
+const styles = {
   main: {
     flex: 1,
     flexDirection: 'column',

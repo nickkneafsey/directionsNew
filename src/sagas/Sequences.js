@@ -11,7 +11,7 @@ const sequences =  [
   },
   {
     emojis: [ "poultry_leg", "rice", "sweet_potato", "fries", "meat_on_bone" ],
-    directions: "Touch all of the meats from the bottom of the screen to the top.",
+    directions: "Touch all of the meats from the top of the screen to the bottom.",
     correctAnswer: [ 0, 4 ]
   },
   {
