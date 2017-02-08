@@ -43,13 +43,16 @@ class ScorePage extends Component {
     const { score, total } = this.props;
     const incorrect = parseInt(total) - parseInt(score);
     const correct = parseInt(score);
+    const correctPercent = this.calculateScore(score, total)
+    const incorrectPercent = 100 - correctPercent;
+
     const data = [
       {
-        "name": "correct",
+        "name": `${correctPercent}%`,
         "total": correct
       },
       {
-        "name": "incorrect",
+        "name": `${incorrectPercent}%`,
         "total": incorrect
       }
     ];

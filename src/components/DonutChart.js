@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { View, Text, Navigator } from 'react-native';
+import { View, Text, Navigator, Dimensions } from 'react-native';
 
-import { Pie } from 'react-native-pathjs-charts'
+import { Pie } from 'react-native-pathjs-charts';
 
 class DonutChart extends Component {
   render() {
@@ -20,6 +20,8 @@ class DonutChart extends Component {
     //   "name": "Alaska",
     //   "population": 7284698
     // }]
+    let width = Dimensions.get('window').width;
+    let donutRadius = (width / 2) - (width * .05)
 
     let options = {
       margin: {
@@ -28,8 +30,8 @@ class DonutChart extends Component {
         right: 20,
         bottom: 20
       },
-      width: 350,
-      height: 350,
+      width: width,
+      height: width,
       color: '#2980B9',
       r: 50,
       R: 150,
@@ -64,12 +66,12 @@ class DonutChart extends Component {
               {'r':198,'g':84,'b':45}
             ]
           }
-          r={50}
-          R={150}
+          r={donutRadius - ((donutRadius / 3) * 2) }
+          R={donutRadius}
           legendPosition="topLeft"
           label={{
             fontFamily: 'Arial',
-            fontSize: 8,
+            fontSize: 14,
             fontWeight: true,
             color: '#ECF0F1'
           }}
