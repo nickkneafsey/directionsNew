@@ -4,6 +4,7 @@ import { View, ScrollView } from 'react-native';
 import _ from 'lodash';
 import { Actions } from 'react-native-router-flux';
 import Emoji from 'react-native-emoji';
+import Sound from 'react-native-sound';
 import { CardSection, Button, BigText } from './common';
 import TouchableEmoji from './TouchableEmoji';
 import SelectionsRow from './SelectionsRow';
@@ -27,9 +28,23 @@ class Game extends Component {
       height: 0,
       width: 0
     };
+    console.log(Sound)
+    // Sound.setCategory('Playback');
   }
 
   componentWillReceiveProps(nextProps) {
+    if (this.props.i !== nextProps.i) {
+      const s = new Sound('vocals/testing.mp3', Sound.MAIN_BUNDLE, (e) => {
+        if (e) {
+          console.log('error', e);
+        } else {
+          // s.setSpeed(1);
+          console.log('duration', s.getDuration());
+          s.play();
+        }
+      });
+    }
+
     this.checkForWinner(nextProps.answerArray, nextProps.i);
   }
 
