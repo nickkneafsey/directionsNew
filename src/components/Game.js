@@ -4,6 +4,7 @@ import { View, ScrollView } from 'react-native';
 import _ from 'lodash';
 import { Actions } from 'react-native-router-flux';
 import Emoji from 'react-native-emoji';
+import Speech from 'react-native-speech';
 import { CardSection, Button, BigText } from './common';
 import TouchableEmoji from './TouchableEmoji';
 import SelectionsRow from './SelectionsRow';
@@ -30,13 +31,29 @@ class Game extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
+    if (this.props.i !== nextProps.i) {
+      this.speak(nextProps.sagas[nextProps.i].directions);
+    }
+
     this.checkForWinner(nextProps.answerArray, nextProps.i);
   }
 
   componentDidMount() {
+    const { sagas, i } = this.props;
+
+    this.speak(sagas[i].directions);
+
     if (this.props.i === this.props.sagas.length) {
       this.props.resetQuestionIterator()
     }
+  }
+
+  speak(words) {
+    Speech.speak({
+      text: words,
+      voice: 'en-US',
+      rate: 0.5
+    });
   }
 
   checkForWinner(answer, i) {
