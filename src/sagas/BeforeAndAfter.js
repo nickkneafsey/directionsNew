@@ -51,12 +51,12 @@ const beforeAndAfter =  [
   },
   {
     emojis: [ "pencil2", "pencil2", "pencil2", "pencil2" ],
-    directions: "Touch first pencil. After that, touch the thrid pencil.",
+    directions: "Touch the first pencil. After that, touch the third pencil.",
     correctAnswer: [ 0, 2 ]
   },
   {
     emojis: [ "snowflake", "snowman", "lightning", "skier" ],
-    directions: "Before you touch the snowman, touch the snowflake. After that, touch the skier.",
+    directions: "Before you touch the snowman, touch the snowflake. After that, touch the skiier.",
     correctAnswer: [ 0, 1, 4 ]
   },
   {

@@ -31,8 +31,13 @@ class Game extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (this.props.i !== nextProps.i) {
+    // Check if it is a new question and if we are past the last saga
+    if (this.props.i !== nextProps.i && (nextProps.i !== this.props.sagas.length)) {
       this.speak(nextProps.sagas[nextProps.i].directions);
+    }
+
+    if (this.props.sagas[this.props.i].correctAnswer.length === nextProps.answerArray.length) {
+      Speech.stop();
     }
 
     this.checkForWinner(nextProps.answerArray, nextProps.i);
@@ -41,18 +46,27 @@ class Game extends Component {
   componentDidMount() {
     const { sagas, i } = this.props;
 
-    this.speak(sagas[i].directions);
 
     if (this.props.i === this.props.sagas.length) {
       this.props.resetQuestionIterator()
     }
+
+    this.speak(sagas[i].directions);
   }
 
   speak(words) {
+    // Speech.resume();
     Speech.speak({
       text: words,
       voice: 'en-US',
-      rate: 0.5
+      rate: 0.4
+    }).then(started => {
+      // Success code
+      "Success?"
+    })
+    .catch(error => {
+      // Failure code
+      console.log("ERROR:", error)
     });
   }
 
@@ -102,9 +116,6 @@ class Game extends Component {
       return <ScorePage score={score} total={this.props.sagas.length} />
     }
 
-    // hacky way to size up emojis for screen
-    // const h = 1/(this.props.sagas[i].emojis.length + 4)
-    // const emojiHeight = vh(h)
     const emojiHeight = (this.state.height) / (this.props.sagas[i].emojis.length + 2);
 
     return (

@@ -16,7 +16,7 @@ const sequences =  [
   },
   {
     emojis: [ "doughnut", "cookie", "chocolate_bar", "cake" ],
-    directions: "First, touch the cookie. Next, touch the doughnut. Then touch the chocolate bar. Finally, Touch the cake.",
+    directions: "First, touch the cookie. Next, touch the doughnut. Then touch the chocolate bar. Finally, touch the cake.",
     correctAnswer: [ 1, 0, 2, 3 ]
   },
   {
