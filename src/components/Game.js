@@ -103,6 +103,11 @@ class Game extends Component {
     this.props.addToAnswerArray(name);
   }
 
+  onRepeatButtonPress() {
+    const { sagas, i } = this.props;
+    this.speak(sagas[i].directions);
+  }
+
   onLayout(event) {
     const { x, y, width, height } = event.nativeEvent.layout;
     this.setState({ x, y, width, height })
@@ -122,7 +127,13 @@ class Game extends Component {
       <View style={{flex: 1}}>
         <ScrollView onLayout={this.onLayout.bind(this)}>
           <CardSection>
-            <BigText>{this.props.sagas[i].directions}</BigText>
+            <BigText>
+              {`${this.props.sagas[i].directions} `}
+            </BigText>
+            <TouchableEmoji
+              name={'arrows_counterclockwise'}
+              onEmojiPress={this.onRepeatButtonPress.bind(this)}
+              />
           </CardSection>
           {
             this.props.sagas[i].emojis.map((emojiName, iterator) => {
