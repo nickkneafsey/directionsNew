@@ -4,6 +4,7 @@ import Emoji from 'react-native-emoji';
 
 const TouchableEmoji = (props) => (
   <TouchableOpacity
+    style={props.style}
     onPress={ () => props.onEmojiPress(props.index) }>
     <Text style={{fontSize: props.emojiHeight, textAlign: 'center'}}>
       <Emoji name={props.name}/>

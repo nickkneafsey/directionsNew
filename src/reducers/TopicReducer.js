@@ -5,7 +5,7 @@ import * as Sagas from '../sagas'
 import _ from 'lodash'
 
 const INITIAL_STATE = {
-  topics: [ "Before and After", "Sequences", "Order", "All Topics", "Easy" ],
+  topics: [ "Before and After", "Sequences", "Order", "Above and Below", "All Topics", "Easy" ],
   selectedTopic: "",
   sagas: []
 }
@@ -33,11 +33,14 @@ const determineSagas = (topic) => {
     case "Order":
       sagas = Sagas['order'];
       break;
+    case "Above and Below":
+      sagas = Sagas['aboveAndBelow'];
+      break;
     case "All Topics":
       sagas = _.concat(Sagas['beforeAndAfter'], Sagas['sagaOne']);
       break;
     default:
       sagas = Sagas['sagaOne'];
   }
-  return _.shuffle(sagas);
+  return _.take(_.shuffle(sagas), 10);
 };

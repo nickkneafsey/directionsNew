@@ -66,7 +66,7 @@ const sequences =  [
   },
   {
     emojis: [ "star", "star", "star", "star", "star" ],
-    directions: "Touch the first and last star, then touch the middle star",
+    directions: "Touch the first star followed by last star. Finally, touch the middle star",
     correctAnswer: [ 0, 4, 2 ]
   },
   {

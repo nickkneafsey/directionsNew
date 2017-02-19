@@ -2,12 +2,12 @@ const order =  [
   // Maybe order??
   {
     emojis: [ "dark_sunglasses", "necktie", "jeans", "shirt", "athletic_shoe" ],
-    directions: "Touch the last one, then touch the second one",
+    directions: "Touch the last item, then touch the second item.",
     correctAnswer: [ 4, 1 ]
   },
   {
     emojis: [ "blue_heart", "green_heart", "yellow_heart", "purple_heart" ],
-    directions: "Touch the yellow heart",
+    directions: "Touch the yellow heart.",
     correctAnswer: [ 2 ]
   },
   {

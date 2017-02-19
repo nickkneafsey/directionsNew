@@ -15,7 +15,7 @@ class SelectionsRow extends Component {
   render() {
     return (
       <BigText>
-        Your Answers: 
+        { `Your Answers: `}
         {
           this.renderAnswerArray(this.props.selections)
         }
