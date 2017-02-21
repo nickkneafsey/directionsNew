@@ -26,7 +26,7 @@ const beforeAndAfter =  [
   },
   {
     emojis: [ "100", "bomb", "older_man", "camera" ],
-    directions: "Before you touch the bomb, touch the old man.",
+    directions: "Touch the old man before you touch the bomb.",
     correctAnswer: [ 2, 1 ]
   },
   {
@@ -36,7 +36,7 @@ const beforeAndAfter =  [
   },
   {
     emojis: [ "100", "bomb", "older_man", "camera" ],
-    directions: "Touch the number 100 before you touch the camera",
+    directions: "Touch the number 100 before you touch the camera.",
     correctAnswer: [ 0, 3 ]
   },
   {
@@ -51,8 +51,8 @@ const beforeAndAfter =  [
   },
   {
     emojis: [ "pig", "hamster", "frog",  "bear" ],
-    directions: "Touch the hamster. After that touch the pig.",
-    correctAnswer: [ 1, 0 ]
+    directions: "Touch the frog. After that, touch the pig.",
+    correctAnswer: [ 2, 0 ]
   },
   {
     emojis: [ "jack_o_lantern", "santa", "fireworks", "birthday" ],
@@ -90,9 +90,39 @@ const beforeAndAfter =  [
     correctAnswer: [ 2, 1 ]
   },
   {
-    emojis: [ "file_cabinet", "card_file_box", "spiral_note_pad", "printer", "wastebasket" ],
-    directions: "Touch the item in the sequence that comes right before the trash can.",
-    correctAnswer: [ 3 ]
+    emojis: [ "surfer", "runner", "horse_racing", "weight_lifter", "golfer" ],
+    directions: "Touch the golfer before you touch the weight lifter.",
+    correctAnswer: [ 4, 3 ]
+  },
+  {
+    emojis: [ "roller_coaster", "carousel_horse", "admission_tickets", "ferris_wheel", "circus_tent" ],
+    directions: "After you touch the horse, touch the ferris wheel.",
+    correctAnswer: [ 1, 3 ]
+  },
+  {
+    emojis: [ "balloon", "gift", "ribbon", "tada", "confetti_ball" ],
+    directions: "After you touch the balloon, touch the present.",
+    correctAnswer: [ 0, 1 ]
+  },
+  {
+    emojis: [ "ice_cream", "doughnut", "cookie", "chocolate_bar", "icecream" ],
+    directions: "After you touch the cookie, touch the doughnut.",
+    correctAnswer: [ 2, 1 ]
+  },
+  {
+    emojis: [ "movie_camera", "popcorn", "candy", "admission_tickets", "film_frames" ],
+    directions: "After you touch the candy, touch the popcorn.",
+    correctAnswer: [ 1, 2 ]
+  },
+  {
+    emojis: [ "green_apple", "apple", "green_apple", "apple", "green_apple" ],
+    directions: "After you touch the middle green apple, touch the first red apple.",
+    correctAnswer: [ 2, 1 ]
+  },
+  {
+    emojis: [ "scissors", "lower_left_crayon", "pencil2", "notebook" ],
+    directions: "After you touch the crayon, touch the pencil.",
+    correctAnswer: [ 2, 0 ]
   }
 ]
 

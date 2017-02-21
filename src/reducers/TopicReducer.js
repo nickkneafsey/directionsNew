@@ -5,7 +5,7 @@ import * as Sagas from '../sagas'
 import _ from 'lodash'
 
 const INITIAL_STATE = {
-  topics: [ "Before and After", "Sequences", "Order", "Above and Below", "All Topics", "Easy" ],
+  topics: [ "Basic Directions", "Before and After", "Sequences", "Above and Below", "All Topics", "Easy" ],
   selectedTopic: "",
   sagas: []
 }
@@ -30,8 +30,8 @@ const determineSagas = (topic) => {
     case "Sequences":
       sagas = Sagas['sequences'];
       break;
-    case "Order":
-      sagas = Sagas['order'];
+    case "Basic Directions":
+      sagas = Sagas['basicDirections'];
       break;
     case "Above and Below":
       sagas = Sagas['aboveAndBelow'];

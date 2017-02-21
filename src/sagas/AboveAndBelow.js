@@ -89,6 +89,41 @@ const aboveAndBelow =  [
     directions: "Touch the person below the biker.",
     correctAnswer: [ 1 ]
   },
+  {
+    emojis: [ "file_cabinet", "card_file_box", "spiral_note_pad", "printer", "wastebasket" ],
+    directions: "Touch the item in the sequence that is above the trash can.",
+    correctAnswer: [ 3 ]
+  },
+  {
+    emojis: [ "scissors", "lower_left_crayon", "pencil2", "notebook" ],
+    directions: "Touch the item below the crayon.",
+    correctAnswer: [ 2 ]
+  },
+  {
+    emojis: [ "orange_book", "lower_left_crayon", "paperclip", "straight_ruler" ],
+    directions: "Touch the item below the paper clip.",
+    correctAnswer: [ 3 ]
+  },
+  {
+    emojis: [ "truck", "derelict_house_building", "construction", "straight_ruler" ],
+    directions: "Touch the item below the house.",
+    correctAnswer: [ 2 ]
+  },
+  {
+    emojis: [ "lion_face", "tiger", "bear", "wolf" ],
+    directions: "Touch the item below the lion.",
+    correctAnswer: [ 1 ]
+  },
+  {
+    emojis: [ "bee", "baby_chick", "turtle", "bird" ],
+    directions: "Touch the animal above the turtle.",
+    correctAnswer: [ 1 ]
+  },
+  {
+    emojis: [ "fish", "dolphin", "whale", "tropical_fish" ],
+    directions: "Touch the animal below dolphin.",
+    correctAnswer: [ 2 ]
+  }
 ]
 
 export { aboveAndBelow };
