@@ -107,14 +107,24 @@ const basicDirections = [
   },
   {
     emojis: [ "bee", "baby_chick", "turtle", "bird" ],
-    directions: "Touch the animal with no wings.",
+    directions: "Touch the animal that does not fly.",
     correctAnswer: [ 2 ]
   },
   {
     emojis: [ "fish", "dolphin", "whale", "tropical_fish" ],
     directions: "Touch the dolphin.",
     correctAnswer: [ 1 ]
-  }
+  },
+  {
+    emojis: [ "turtle", "turtle", "rabbit", "turtle", "turtle" ],
+    directions: "Touch the animal that is not a turtle.",
+    correctAnswer: [ 2 ]
+  },
+  {
+    emojis: [ "eyes", "lips", "ear", "nose" ],
+    directions: "Touch the eyes. Next touch the ears. Then touch the mouth. Finally touch the nose.",
+    correctAnswer: [ 0, 2, 1, 3 ]
+  },
 ]
 
 export { basicDirections };

@@ -5,7 +5,7 @@ import { CardSection, Button } from './common';
 
 class Splash extends Component {
   navigate() {
-    Actions.ageMenu();
+    Actions.topicMenu();
   }
 
   render() {

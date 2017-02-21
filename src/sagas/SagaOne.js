@@ -4,7 +4,6 @@ const sagaOne =  [
     directions: "Touch the last one, then touch the second one",
     correctAnswer: [ 4, 1 ]
   }
-
 ];
 
 export { sagaOne };

@@ -71,8 +71,8 @@ const beforeAndAfter =  [
   },
   {
     emojis: [ "snowflake", "snowman", "lightning", "skier" ],
-    directions: "Before you touch the snow man, touch the snow flake. After that, touch the skiier.",
-    correctAnswer: [ 0, 1, 4 ]
+    directions: "Before you touch the snow man, touch the snow flake.",
+    correctAnswer: [ 0, 1 ]
   },
   {
     emojis: [ "baseball", "soccer", "basketball", "football", "tennis" ],
@@ -123,6 +123,11 @@ const beforeAndAfter =  [
     emojis: [ "scissors", "lower_left_crayon", "pencil2", "notebook" ],
     directions: "After you touch the crayon, touch the pencil.",
     correctAnswer: [ 2, 0 ]
+  },
+  {
+    emojis: [ "bug", "beetle", "ant", "elephant" ],
+    directions: "Touch the ant before you touch the elephant.",
+    correctAnswer: [ 2, 3 ]
   }
 ]
 

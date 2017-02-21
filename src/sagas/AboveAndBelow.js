@@ -121,8 +121,18 @@ const aboveAndBelow =  [
   },
   {
     emojis: [ "fish", "dolphin", "whale", "tropical_fish" ],
-    directions: "Touch the animal below dolphin.",
+    directions: "Touch the animal below the dolphin.",
     correctAnswer: [ 2 ]
+  },
+  {
+    emojis: [ "mouse", "poodle", "pig", "frog" ],
+    directions: "Touch the animal below the mouse.",
+    correctAnswer: [ 1 ]
+  },
+  {
+    emojis: [ "relaxed", "shirt", "jeans", "mans_shoe" ],
+    directions: "Touch the item above the shirt.",
+    correctAnswer: [ 0 ]
   }
 ]
 

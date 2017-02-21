@@ -103,6 +103,32 @@ const sequences =  [
     emojis: [ "lion_face", "tiger", "bear", "wolf" ],
     directions: "Touch the bear. Then touch the lion. Finally, touch the wolf.",
     correctAnswer: [ 2, 0, 3 ]
+  },
+  {
+    emojis: [ "relaxed", "shirt", "jeans", "mans_shoe" ],
+    directions: "Touch the jeans. Next, touch the face.",
+    correctAnswer: [ 2, 0 ]
+  },
+  {
+    emojis: [ "relaxed", "shirt", "jeans", "mans_shoe" ],
+    directions: "Touch the shoe, then touch the shirt.",
+    correctAnswer: [ 2, 0 ]
+  },
+  {
+    emojis: [ "womans_hat", "girl", "dress", "boot" ],
+    directions: "Touch the boot. After that, touch the hat.",
+    correctAnswer: [ 3, 0 ]
+  },
+  {
+    emojis: [ "womans_hat", "girl", "dress", "boot" ],
+    directions: "Touch the dress. After that, touch the boot.",
+    correctAnswer: [ 2, 3 ]
+  },
+  ,
+  {
+    emojis: [ "facepunch", "ok_hand", "wave", "+1" ],
+    directions: "Touch the thumbs up, then touch the fist.",
+    correctAnswer: [ 3, 0 ]
   }
 
 ];
