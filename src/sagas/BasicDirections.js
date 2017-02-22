@@ -137,18 +137,68 @@ const basicDirections = [
   },
   {
     emojis: [ "small_red_triangle", "large_blue_diamond", "red_circle", "large_blue_diamond", "small_red_triangle" ],
-    directions: "Touch all of the red shapes.",
+    directions: "Touch all of the red shapes from top to bottom.",
     correctAnswer: [ 0, 2, 4 ]
   },
   {
     emojis: [ "large_blue_circle", "large_blue_diamond", "red_circle", "large_blue_circle", "small_red_triangle" ],
-    directions: "Touch all of the circles.",
+    directions: "Touch all of the circles from top to bottom.",
     correctAnswer: [ 0, 2, 3 ]
   },
   {
     emojis: [ "green_apple", "apple", "green_apple", "apple", "green_apple" ],
-    directions: "Touch each of the green apples.",
+    directions: "Touch each of the green apples from top to bottom.",
     correctAnswer: [ 0, 2, 4 ]
+  },
+  {
+    emojis: [ "small_red_triangle", "large_blue_diamond", "red_circle", "large_blue_diamond", "small_red_triangle" ],
+    directions: "Touch all of the red shapes from top to bottom.",
+    correctAnswer: [ 0, 2, 4 ]
+  },
+  {
+    emojis: [ "large_blue_circle", "large_blue_diamond", "red_circle", "large_blue_circle", "small_red_triangle" ],
+    directions: "Touch all of the circles from top to bottom.",
+    correctAnswer: [ 0, 2, 3 ]
+  },
+  {
+    emojis: [ "green_apple", "apple", "green_apple", "apple", "green_apple" ],
+    directions: "Touch each of the green apples from top to bottom.",
+    correctAnswer: [ 0, 2, 4 ]
+  },
+  {
+    emojis: [ "gem", "star", "sparkling_heart",  "droplet" ],
+    directions: "Touch the drop of water.",
+    correctAnswer: [ 3 ]
+  },
+  {
+    emojis: [ "tv", "wrench", "tv", "camera" ],
+    directions: "Touch the wrench. Next touch the first T.V.",
+    correctAnswer: [ 1, 0 ]
+  },
+  {
+    emojis: [ "tv", "star", "tv", "star", "tv" ],
+    directions: "Touch both stars from top to bottom.",
+    correctAnswer: [ 1, 3 ]
+  },
+  {
+    emojis: [ "football", "baseball", "basketball", "baseball", "soccer" ],
+    directions: "Touch the baseballs from bottom to top.",
+    correctAnswer: [ 3, 1 ]
+  },
+  {
+    emojis: [ "tophat", "eyes", "nose", "tongue" ],
+    directions: "Touch the mouth.",
+    correctAnswer: [ 3 ]
+  },
+  {
+    emojis: [ "pig", "hamster", "frog",  "bear" ],
+    directions: "Touch the bear and then touch the frog.",
+    correctAnswer: [ 3, 2 ]
+  },
+  {
+    emojis: [ "jack_o_lantern", "santa", "fireworks", "birthday" ],
+    directions: "Touch Santa three times.",
+    correctAnswer: [ 1, 1, 1 ]
   },
 ]
 
