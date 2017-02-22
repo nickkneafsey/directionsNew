@@ -25,7 +25,17 @@ class ScorePage extends Component {
              <Emoji name={'tada'} />
           </BigText>
           <BigText style={{ fontSize: 65, textAlign: 'center' }}>
+             <Emoji name={'100'} />
+             <Emoji name={'100'} />
+             <Emoji name={'100'} />
+          </BigText>
+          <BigText style={{ fontSize: 65, textAlign: 'center' }}>
              { this.generatePraise() }
+          </BigText>
+          <BigText style={{ fontSize: 65, textAlign: 'center' }}>
+             <Emoji name={'100'} />
+             <Emoji name={'100'} />
+             <Emoji name={'100'} />
           </BigText>
           <BigText style={{ fontSize: 65, textAlign: 'center' }}>
              <Emoji name={'tada'} />

@@ -122,8 +122,33 @@ const basicDirections = [
   },
   {
     emojis: [ "eyes", "lips", "ear", "nose" ],
-    directions: "Touch the eyes. Next touch the ears. Then touch the mouth. Finally touch the nose.",
-    correctAnswer: [ 0, 2, 1, 3 ]
+    directions: "Touch the ears.",
+    correctAnswer: [ 2 ]
+  },
+  {
+    emojis: [ "fish", "dolphin", "whale", "tropical_fish", "dolphin", "whale" ],
+    directions: "Touch all of the dolphins from top to bottom.",
+    correctAnswer: [ 1, 4 ]
+  },
+  {
+    emojis: [ "hearts", "star", "four_leaf_clover", "balloon", "rainbow" ],
+    directions: "Touch the heart followed by the star.",
+    correctAnswer: [ 0, 1 ]
+  },
+  {
+    emojis: [ "small_red_triangle", "large_blue_diamond", "red_circle", "large_blue_diamond", "small_red_triangle" ],
+    directions: "Touch all of the red shapes.",
+    correctAnswer: [ 0, 2, 4 ]
+  },
+  {
+    emojis: [ "large_blue_circle", "large_blue_diamond", "red_circle", "large_blue_circle", "small_red_triangle" ],
+    directions: "Touch all of the circles.",
+    correctAnswer: [ 0, 2, 3 ]
+  },
+  {
+    emojis: [ "green_apple", "apple", "green_apple", "apple", "green_apple" ],
+    directions: "Touch each of the green apples.",
+    correctAnswer: [ 0, 2, 4 ]
   },
 ]
 

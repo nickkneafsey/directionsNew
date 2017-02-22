@@ -40,7 +40,7 @@ const aboveAndBelow =  [
     correctAnswer: [ 0 ]
   },
   {
-    emojis: [ "telephone_receiver", "mailbox", "package", "satellite_antenna" ],
+    emojis: [ "telephone_receiver", "mailbox", "package", "incoming_envelope" ],
     directions: "Touch the item below the package.",
     correctAnswer: [ 3 ]
   },
@@ -76,7 +76,7 @@ const aboveAndBelow =  [
   },
   {
     emojis: [ "fearful", "rage", "expressionless", "sunglasses" ],
-    directions: "Touch the face above face wearing sunglasses.",
+    directions: "Touch the face above the face wearing sunglasses.",
     correctAnswer: [ 2 ]
   },
   {
@@ -133,7 +133,77 @@ const aboveAndBelow =  [
     emojis: [ "relaxed", "shirt", "jeans", "mans_shoe" ],
     directions: "Touch the item above the shirt.",
     correctAnswer: [ 0 ]
-  }
+  },
+  {
+    emojis: [ "hearts", "star", "four_leaf_clover", "balloon", "rainbow" ],
+    directions: "Touch the item above the star, then touch the item below the star.",
+    correctAnswer: [ 0, 2 ]
+  },
+  {
+    emojis: [ "tropical_fish", "dolphin", "tropical_fish", "tropical_fish", "dolphin", "whale" ],
+    directions: "Touch the animal above the whale",
+    correctAnswer: [ 4 ]
+  },
+  {
+    emojis: [ "dark_sunglasses", "necktie", "jeans", "athletic_shoe" ],
+    directions: "Touch the item above the jeans. After that, touch the item above the tie.",
+    correctAnswer: [ 1, 0 ]
+  },
+  {
+    emojis: [ "green_apple", "apple", "green_apple", "apple", "green_apple" ],
+    directions: "Touch the item above the last green apple.",
+    correctAnswer: [ 3 ]
+  },
+  {
+    emojis: [ "black_circle", "white_circle", "white_circle", "black_circle", "black_circle", "black_circle", "white_circle" ],
+    directions: "Touch the item below the first black circle. Then touch the item below the second white circle.",
+    correctAnswer: [ 1, 3 ]
+  },
+  {
+    emojis: [ "balloon", "gift", "ribbon", "tada", "confetti_ball" ],
+    directions: "After you touch the balloon, touch the item below the ribbon.",
+    correctAnswer: [ 0, 3 ]
+  },
+  {
+    emojis: [ "surfer", "runner", "horse_racing", "weight_lifter", "golfer" ],
+    directions: "Touch the person below the surfer. After that touch the person above the golfer.",
+    correctAnswer: [ 1, 3 ]
+  },
+  {
+    emojis: [ "pencil2", "pencil2", "pencil2", "pencil2", "pencil2" ],
+    directions: "Touch the pencil above the last pencil.",
+    correctAnswer: [ 3 ]
+  },
+  {
+    emojis: [ "large_blue_circle", "large_blue_diamond", "red_circle", "large_blue_circle", "small_red_triangle" ],
+    directions: "Touch the shape below the last circle.",
+    correctAnswer: [ 4 ]
+  },
+  {
+    emojis: [ "eyes", "lips", "ear", "nose" ],
+    directions: "Touch the ear then touch the item above the lips.",
+    correctAnswer: [ 2, 0 ]
+  },
+  {
+    emojis: [ "gem", "star", "sparkling_heart",  "droplet" ],
+    directions: "Touch the heart and then touch the item below it.",
+    correctAnswer: [ 2, 3 ]
+  },
+  {
+    emojis: [ "tv", "wrench", "tv", "camera" ],
+    directions: "Touch the item below the second T.V.",
+    correctAnswer: [ 3 ]
+  },
+  {
+    emojis: [ "tv", "star", "tv", "star", "tv" ],
+    directions: "Touch the last star and then touch the item below it.",
+    correctAnswer: [ 3, 4 ]
+  },
+  {
+    emojis: [ "football", "baseball", "basketball", "baseball", "soccer" ],
+    directions: "Touch the ball above the soccer ball. Next, touch the ball below the football.",
+    correctAnswer: [ 3, 1 ]
+  },
 ]
 
 export { aboveAndBelow };

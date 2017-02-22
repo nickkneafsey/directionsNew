@@ -66,8 +66,8 @@ const sequences =  [
   },
   {
     emojis: [ "star", "star", "star", "star", "star" ],
-    directions: "Touch the first star followed by last star. Finally, touch the middle star",
-    correctAnswer: [ 0, 4, 2 ]
+    directions: "Touch the first star, followed by the last star.",
+    correctAnswer: [ 0, 4 ]
   },
   {
     emojis: [ "hotdog", "taco", "hamburger", "pizza" ],
@@ -75,14 +75,9 @@ const sequences =  [
     correctAnswer: [ 0 ]
   },
   {
-    emojis: [ "red_circle", "large_blue_diamond", "large_orange_diamond" ],
-    directions: "Touch every shape starting with the warmest color and ending with the coolest color.",
-    correctAnswer: [ 0, 2, 1 ]
-  },
-  {
     emojis: [ "grinning", "sob", "neutral_face" ],
-    directions: "Touch all of the faces from saddest to happiest",
-    correctAnswer: [ 1, 2, 0 ]
+    directions: "Touch the sad face, then touch the happy face",
+    correctAnswer: [ 1, 0 ]
   },
   {
     emojis: [ "flag-us", "see_no_evil", "flag-ca", "hear_no_evil", "flag-br" ],
@@ -124,12 +119,26 @@ const sequences =  [
     directions: "Touch the dress. After that, touch the boot.",
     correctAnswer: [ 2, 3 ]
   },
-  ,
   {
     emojis: [ "facepunch", "ok_hand", "wave", "+1" ],
     directions: "Touch the thumbs up, then touch the fist.",
     correctAnswer: [ 3, 0 ]
-  }
+  },
+  {
+    emojis: [ "shamrock", "shamrock", "shamrock", "+shamrock" ],
+    directions: "Touch the second shamrock, then touch the fourth shamrock.",
+    correctAnswer: [ 3, 0 ]
+  },
+  {
+    emojis: [ "eyes", "lips", "ear", "nose" ],
+    directions: "Touch the eyes. Next touch the ears. Then touch the mouth. Finally touch the nose.",
+    correctAnswer: [ 0, 2, 1, 3 ]
+  },
+  {
+    emojis: [ "lower_left_crayon", "linked_paperclips", "lower_left_crayon", "linked_paperclips" ],
+    directions: "Touch both of the paperclips, then touch the second crayon.",
+    correctAnswer: [ 1, 3, 2 ]
+  },
 
 ];
 

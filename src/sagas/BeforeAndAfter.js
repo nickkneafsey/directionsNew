@@ -11,7 +11,7 @@ const beforeAndAfter =  [
   },
   {
     emojis: [ "lower_left_crayon", "linked_paperclips", "lower_left_crayon", "linked_paperclips" ],
-    directions: "Touch the crayons from top to bottom. After that, touch the paper clips from top to bottom",
+    directions: "Touch all of the crayons from top to bottom. After that, touch all of the paper clips from top to bottom.",
     correctAnswer: [ 0, 2, 1, 3 ]
   },
   {
@@ -21,8 +21,8 @@ const beforeAndAfter =  [
   },
   {
     emojis: [ "tv", "wrench", "tv", "camera" ],
-    directions: "Touch all of the TV's from top to bottom. After that, touch the camera.",
-    correctAnswer: [ 0, 2, 3 ]
+    directions: "Touch the first T.V. After that, touch the camera.",
+    correctAnswer: [ 0, 3 ]
   },
   {
     emojis: [ "100", "bomb", "older_man", "camera" ],
@@ -86,7 +86,7 @@ const beforeAndAfter =  [
   },
   {
     emojis: [ "hotdog", "taco", "hamburger", "pizza" ],
-    directions: "Before you touch the taco, touch the hamburger",
+    directions: "Touch the hamburger before you touch the taco.",
     correctAnswer: [ 2, 1 ]
   },
   {
@@ -112,7 +112,7 @@ const beforeAndAfter =  [
   {
     emojis: [ "movie_camera", "popcorn", "candy", "admission_tickets", "film_frames" ],
     directions: "After you touch the candy, touch the popcorn.",
-    correctAnswer: [ 1, 2 ]
+    correctAnswer: [ 2, 1 ]
   },
   {
     emojis: [ "green_apple", "apple", "green_apple", "apple", "green_apple" ],
@@ -122,13 +122,105 @@ const beforeAndAfter =  [
   {
     emojis: [ "scissors", "lower_left_crayon", "pencil2", "notebook" ],
     directions: "After you touch the crayon, touch the pencil.",
-    correctAnswer: [ 2, 0 ]
+    correctAnswer: [ 1, 2 ]
   },
   {
     emojis: [ "bug", "beetle", "ant", "elephant" ],
     directions: "Touch the ant before you touch the elephant.",
     correctAnswer: [ 2, 3 ]
-  }
+  },
+  {
+    emojis: [ "womans_hat", "girl", "dress", "boot" ],
+    directions: "Touch the hat before you touch the dress.",
+    correctAnswer: [ 0, 2 ]
+  },
+  {
+    emojis: [ "red_circle", "red_circle", "large_blue_circle", "large_blue_circle", "black_circle" ],
+    directions: "Touch the first red circle after you touch the last blue circle.",
+    correctAnswer: [ 3, 0 ]
+  },
+  {
+    emojis: [ "baseball", "baseball", "soccer", "baseball", "soccer" ],
+    directions: "Before touching the last soccer ball, touch the second baseball.",
+    correctAnswer: [ 1, 4 ]
+  },
+  {
+    emojis: [ "peach", "watermelon", "strawberry", "pear", "apple", "banana" ],
+    directions: "Touch the strawberry and the apple before you touch the banana.",
+    correctAnswer: [ 2, 4, 5 ]
+  },
+  {
+    emojis: [ "peach", "watermelon", "strawberry", "pear", "apple", "banana" ],
+    directions: "Touch the strawberry and the apple before you touch the peach.",
+    correctAnswer: [ 2, 4, 0 ]
+  },
+  {
+    emojis: [ "black_circle", "white_circle", "white_circle", "black_circle", "black_circle", "black_circle", "white_circle" ],
+    directions: "Touch the last black circle after you touch the first white circle.",
+    correctAnswer: [ 1, 5 ]
+  },
+  {
+    emojis: [ "black_circle", "white_circle", "white_circle", "black_circle", "black_circle", "black_circle", "white_circle" ],
+    directions: "Touch all of the black circles from top to bottom.",
+    correctAnswer: [ 0, 4, 5, 6 ]
+  },
+  {
+    emojis: [ "jack_o_lantern", "ghost", "skull", "alien" ],
+    directions: "Touch the ghost after you touch the alien.",
+    correctAnswer: [ 1, 3 ]
+  },
+
+  {
+    emojis: [ "alien", "alien", "ghost", "alien", "ghost" ],
+    directions: "Touch the third alien before you touch the first ghost.",
+    correctAnswer: [ 3, 2 ]
+  },
+  {
+    emojis: [ "green_apple", "apple", "green_apple", "apple", "green_apple" ],
+    directions: "Touch the last green apple before you touch the last red apple.",
+    correctAnswer: [ 4, 3 ]
+  },
+  {
+    emojis: [ "dark_sunglasses", "necktie", "jeans", "shirt", "athletic_shoe" ],
+    directions: "Touch the jeans after you touch the shoe.",
+    correctAnswer: [ 4, 2 ]
+  },
+  {
+    emojis: [ "fish", "dolphin", "whale", "tropical_fish", "dolphin", "whale" ],
+    directions: "Touch the second dolphin before you touch the first whale.",
+    correctAnswer: [ 4, 2 ]
+  },
+  {
+    emojis: [ "tropical_fish", "dolphin", "tropical_fish", "tropical_fish", "dolphin", "whale" ],
+    directions: "Touch the first fish after you touch the last dolphin.",
+    correctAnswer: [ 4, 0 ]
+  },
+  {
+    emojis: [ "tropical_fish", "dolphin", "tropical_fish", "tropical_fish", "dolphin", "whale" ],
+    directions: "Touch the third fish after you touch the whale.",
+    correctAnswer: [ 3, 5 ]
+  },
+  {
+    emojis: [ "hearts", "star", "four_leaf_clover", "balloon", "rainbow" ],
+    directions: "Touch the heart after you touch the rainbow. After touching those touch balloon.",
+    correctAnswer: [ 4, 0, 3 ]
+  },
+  {
+    emojis: [ "football", "baseball", "basketball", "baseball", "soccer" ],
+    directions: "Touch the football after you touch the basketball.",
+    correctAnswer: [ 2, 0 ]
+  },
+  {
+    emojis: [ "eyes", "lips", "ear", "nose" ],
+    directions: "Touch the ear after you touch the eyes.",
+    correctAnswer: [ 0, 2 ]
+  },
+  {
+    emojis: [ "gem", "star", "sparkling_heart",  "droplet" ],
+    directions: "Touch the heart before you touch the drop of water.",
+    correctAnswer: [ 2, 3 ]
+  },
+
 ]
 
 export { beforeAndAfter };
