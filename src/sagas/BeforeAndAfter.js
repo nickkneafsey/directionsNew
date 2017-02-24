@@ -162,12 +162,12 @@ const beforeAndAfter =  [
   {
     emojis: [ "black_circle", "white_circle", "white_circle", "black_circle", "black_circle", "black_circle", "white_circle" ],
     directions: "Touch all of the black circles from top to bottom.",
-    correctAnswer: [ 0, 4, 5, 6 ]
+    correctAnswer: [ 0, 3, 4, 5 ]
   },
   {
     emojis: [ "jack_o_lantern", "ghost", "skull", "alien" ],
     directions: "Touch the ghost after you touch the alien.",
-    correctAnswer: [ 1, 3 ]
+    correctAnswer: [ 3, 1 ]
   },
 
   {
@@ -196,13 +196,13 @@ const beforeAndAfter =  [
     correctAnswer: [ 4, 0 ]
   },
   {
-    emojis: [ "tropical_fish", "dolphin", "tropical_fish", "tropical_fish", "dolphin", "whale" ],
+    emojis: [ "tropical_fish", "ocean", "tropical_fish", "tropical_fish", "ocean", "whale" ],
     directions: "Touch the third fish after you touch the whale.",
-    correctAnswer: [ 3, 5 ]
+    correctAnswer: [ 5, 3 ]
   },
   {
     emojis: [ "hearts", "star", "four_leaf_clover", "balloon", "rainbow" ],
-    directions: "Touch the heart after you touch the rainbow. After touching those touch balloon.",
+    directions: "Touch the heart after you touch the rainbow. After touching both of those touch the balloon.",
     correctAnswer: [ 4, 0, 3 ]
   },
   {
@@ -220,7 +220,26 @@ const beforeAndAfter =  [
     directions: "Touch the heart before you touch the drop of water.",
     correctAnswer: [ 2, 3 ]
   },
-
+  {
+    emojis: [ "question", "grey_exclamation", "grey_question",  "question" ],
+    directions: "Touch the third question mark before you touch the exclamation point.",
+    correctAnswer: [ 3, 1 ]
+  },
+  {
+    emojis: [ "burrito", "taco", "hotdog", "burrito", "taco", "hotdog", ],
+    directions: "Touch the second burrito after you touch the first taco.",
+    correctAnswer: [ 1, 3 ]
+  },
+  {
+    emojis: [ "sun_with_face", "last_quarter_moon_with_face", "star2", "rain_cloud" ],
+    directions: "Touch the moon three times after touching the rain cloud.",
+    correctAnswer: [ 3, 1, 1, 1 ]
+  },
+  {
+    emojis: [ "rain_cloud", "sun_with_face", "last_quarter_moon_with_face", "star2" ],
+    directions: "Touch the sun before you touch the moon. After that, touch the star.",
+    correctAnswer: [ 1, 2, 3 ]
+  },
 ]
 
 export { beforeAndAfter };

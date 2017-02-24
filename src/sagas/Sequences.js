@@ -125,7 +125,7 @@ const sequences =  [
     correctAnswer: [ 3, 0 ]
   },
   {
-    emojis: [ "shamrock", "shamrock", "shamrock", "+shamrock" ],
+    emojis: [ "shamrock", "shamrock", "shamrock", "shamrock" ],
     directions: "Touch the second shamrock, then touch the fourth shamrock.",
     correctAnswer: [ 3, 0 ]
   },
@@ -139,7 +139,51 @@ const sequences =  [
     directions: "Touch both of the paperclips, then touch the second crayon.",
     correctAnswer: [ 1, 3, 2 ]
   },
-
+  {
+    emojis: [ "grey_exclamation", "question", "grey_exclamation", "grey_question",  "question" ],
+    directions: "Touch the second question mark. Next, touch the second exclamation point.",
+    correctAnswer: [ 3, 2 ]
+  },
+  {
+    emojis: [ "heart", "spades", "black_medium_square", "star",  "black_large_square" ],
+    directions: "Touch all of the black shapes from top to bottom.",
+    correctAnswer: [ 1, 2, 4 ]
+  },
+  {
+    emojis: [ "lemon", "grapes", "cherries", "watermelon",  "tomato" ],
+    directions: "Touch the third fruit. Next touch the lemon.",
+    correctAnswer: [ 2, 0 ]
+  },
+  {
+    emojis: [ "burrito", "taco", "hotdog", "burrito", "taco", "hotdog", ],
+    directions: "Touch the second burrito. Next touch the first hotdog. Finally, touch the first burrito.",
+    correctAnswer: [ 3, 2, 0 ]
+  },
+  {
+    emojis: [ "gem", "star", "sparkling_heart",  "droplet" ],
+    directions: "Touch the last item before you touch the second item.",
+    correctAnswer: [ 3, 1 ]
+  },
+  {
+    emojis: [ "football", "baseball", "basketball", "baseball", "soccer" ],
+    directions: "Touch the baseballs from top to bottom. Next touch the football.",
+    correctAnswer: [ 1, 3, 0 ]
+  },
+  {
+    emojis: [ "football", "baseball", "basketball", "baseball", "soccer" ],
+    directions: "Touch the first baseball three times. Next touch the soccer ball.",
+    correctAnswer: [ 1, 1, 1, 4 ]
+  },
+  {
+    emojis: [ "rose", "sunflower", "cherry_blossom", "tulip", "hibiscus" ],
+    directions: "Touch the last flower once. Next touch the first flower twice.",
+    correctAnswer: [ 4, 0, 0 ]
+  },
+  {
+    emojis: [ "sun_with_face", "last_quarter_moon_with_face", "star2", "rain_cloud" ],
+    directions: "First, touch the moon two times. Next, touch the rain cloud.",
+    correctAnswer: [ 1, 1, 3 ]
+  },
 ];
 
 export { sequences };

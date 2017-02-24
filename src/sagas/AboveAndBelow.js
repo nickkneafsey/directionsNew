@@ -204,6 +204,31 @@ const aboveAndBelow =  [
     directions: "Touch the ball above the soccer ball. Next, touch the ball below the football.",
     correctAnswer: [ 3, 1 ]
   },
+  {
+    emojis: [ "grey_exclamation", "question", "grey_exclamation", "grey_question",  "question" ],
+    directions: "Touch item above the second question mark.",
+    correctAnswer: [ 2 ]
+  },
+  {
+    emojis: [ "football", "baseball", "basketball", "baseball", "soccer" ],
+    directions: "After you touch the football, touch the third ball two times.",
+    correctAnswer: [ 0, 2, 2 ]
+  },
+  {
+    emojis: [ "rose", "sunflower", "cherry_blossom", "tulip", "hibiscus" ],
+    directions: "Touch the fourth flower 2 times.",
+    correctAnswer: [ 3, 3 ]
+  },
+  {
+    emojis: [ "rose", "sunflower", "cherry_blossom", "tulip", "hibiscus" ],
+    directions: "Touch the sunflower after you touch the first flower.",
+    correctAnswer: [ 1, 0 ]
+  },
+  {
+    emojis: [ "sun_with_face", "last_quarter_moon_with_face", "star2", "rain_cloud" ],
+    directions: "Touch the sun after you touch the item below the moon.",
+    correctAnswer: [ 2, 0 ]
+  },
 ]
 
 export { aboveAndBelow };

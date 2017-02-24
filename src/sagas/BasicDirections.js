@@ -200,6 +200,16 @@ const basicDirections = [
     directions: "Touch Santa three times.",
     correctAnswer: [ 1, 1, 1 ]
   },
+  {
+    emojis: [ "question", "grey_exclamation", "grey_question",  "question" ],
+    directions: "Touch the second question mark.",
+    correctAnswer: [ 2 ]
+  },
+  {
+    emojis: [ "burrito", "taco", "hotdog", "burrito", "taco", "hotdog", ],
+    directions: "Touch the hot dogs from top to bottom.",
+    correctAnswer: [ 2, 5 ]
+  },
 ]
 
 export { basicDirections };
