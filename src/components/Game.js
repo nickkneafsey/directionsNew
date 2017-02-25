@@ -39,6 +39,7 @@ class Game extends Component {
     if (this.props.sagas[this.props.i].correctAnswer.length === nextProps.answerArray.length) {
       Speech.stop();
     }
+    console.log(this.props.sagas[this.props.i].directions)
 
     this.checkForWinner(nextProps.answerArray, nextProps.i);
   }

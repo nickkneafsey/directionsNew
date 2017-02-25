@@ -39,6 +39,8 @@ const determineSagas = (topic) => {
     case "All Topics":
       sagas = _.concat(Sagas['beforeAndAfter'], Sagas['sequences'], Sagas['basicDirections'], Sagas['aboveAndBelow']);
       break;
+    case "Every":
+      return  _.concat(Sagas['beforeAndAfter'], Sagas['sequences'], Sagas['basicDirections'], Sagas['aboveAndBelow']);
     default:
       sagas = Sagas['sagaOne'];
   }

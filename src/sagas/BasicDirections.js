@@ -151,9 +151,9 @@ const basicDirections = [
     correctAnswer: [ 0, 2, 4 ]
   },
   {
-    emojis: [ "small_red_triangle", "large_blue_diamond", "red_circle", "large_blue_diamond", "small_red_triangle" ],
+    emojis: [ "small_red_triangle", "large_blue_diamond", "red_circle", "large_blue_diamond" ],
     directions: "Touch all of the red shapes from top to bottom.",
-    correctAnswer: [ 0, 2, 4 ]
+    correctAnswer: [ 0, 2 ]
   },
   {
     emojis: [ "large_blue_circle", "large_blue_diamond", "red_circle", "large_blue_circle", "small_red_triangle" ],
@@ -192,7 +192,7 @@ const basicDirections = [
   },
   {
     emojis: [ "pig", "hamster", "frog",  "bear" ],
-    directions: "Touch the bear and then touch the frog.",
+    directions: "Touch the bear, and then touch the frog.",
     correctAnswer: [ 3, 2 ]
   },
   {

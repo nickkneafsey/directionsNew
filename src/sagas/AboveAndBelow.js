@@ -206,7 +206,7 @@ const aboveAndBelow =  [
   },
   {
     emojis: [ "grey_exclamation", "question", "grey_exclamation", "grey_question",  "question" ],
-    directions: "Touch item above the second question mark.",
+    directions: "Touch the item above the second question mark.",
     correctAnswer: [ 2 ]
   },
   {
@@ -222,7 +222,7 @@ const aboveAndBelow =  [
   {
     emojis: [ "rose", "sunflower", "cherry_blossom", "tulip", "hibiscus" ],
     directions: "Touch the sunflower after you touch the first flower.",
-    correctAnswer: [ 1, 0 ]
+    correctAnswer: [ 0, 1 ]
   },
   {
     emojis: [ "sun_with_face", "last_quarter_moon_with_face", "star2", "rain_cloud" ],

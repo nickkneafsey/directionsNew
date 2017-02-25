@@ -107,7 +107,7 @@ const sequences =  [
   {
     emojis: [ "relaxed", "shirt", "jeans", "mans_shoe" ],
     directions: "Touch the shoe, then touch the shirt.",
-    correctAnswer: [ 2, 0 ]
+    correctAnswer: [ 3, 1 ]
   },
   {
     emojis: [ "womans_hat", "girl", "dress", "boot" ],
@@ -127,7 +127,7 @@ const sequences =  [
   {
     emojis: [ "shamrock", "shamrock", "shamrock", "shamrock" ],
     directions: "Touch the second shamrock, then touch the fourth shamrock.",
-    correctAnswer: [ 3, 0 ]
+    correctAnswer: [ 1, 3 ]
   },
   {
     emojis: [ "eyes", "lips", "ear", "nose" ],
@@ -136,7 +136,7 @@ const sequences =  [
   },
   {
     emojis: [ "lower_left_crayon", "linked_paperclips", "lower_left_crayon", "linked_paperclips" ],
-    directions: "Touch both of the paperclips, then touch the second crayon.",
+    directions: "Touch both of the paper clips from top to bottom, then touch the second crayon.",
     correctAnswer: [ 1, 3, 2 ]
   },
   {
