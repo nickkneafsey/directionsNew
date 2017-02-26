@@ -38,7 +38,7 @@ const styles = {
   },
   bgImage: {
     flex: 1,
-    resizeMode: 'repeat'
+    resizeMode: 'repeat',
     // 'cover', 'contain', 'stretch', 'repeat', 'center'
   },
   welcome: {
