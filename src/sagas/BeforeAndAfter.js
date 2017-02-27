@@ -155,12 +155,12 @@ const beforeAndAfter =  [
     correctAnswer: [ 2, 4, 0 ]
   },
   {
-    emojis: [ "black_circle", "white_circle", "white_circle", "black_circle", "black_circle", "black_circle", "white_circle" ],
+    emojis: [ "black_circle", "white_circle", "white_circle", "black_circle", "black_circle", "white_circle" ],
     directions: "Touch the last black circle after you touch the first white circle.",
-    correctAnswer: [ 1, 5 ]
+    correctAnswer: [ 1, 4 ]
   },
   {
-    emojis: [ "black_circle", "white_circle", "white_circle", "black_circle", "black_circle", "black_circle", "white_circle" ],
+    emojis: [ "black_circle", "white_circle", "white_circle", "black_circle", "black_circle", "black_circle" ],
     directions: "Touch all of the black circles from top to bottom.",
     correctAnswer: [ 0, 3, 4, 5 ]
   },

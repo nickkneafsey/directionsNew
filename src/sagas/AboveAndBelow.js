@@ -155,7 +155,7 @@ const aboveAndBelow =  [
     correctAnswer: [ 3 ]
   },
   {
-    emojis: [ "black_circle", "white_circle", "white_circle", "black_circle", "black_circle", "black_circle", "white_circle" ],
+    emojis: [ "black_circle", "white_circle", "white_circle", "black_circle", "black_circle", "white_circle" ],
     directions: "Touch the item below the first black circle. Then touch the item below the second white circle.",
     correctAnswer: [ 1, 3 ]
   },

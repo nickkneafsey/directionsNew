@@ -1,17 +1,23 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { Text, Dimensions } from 'react-native';
 
 const BigText = (props) => {
+  let width = Dimensions.get('window').width;
+  let size = (width > 500) ? styles.bigTextStyle : styles.smallTextStyle
   return (
-    <Text style={[ styles.textStyle, props.style ]}>
+    <Text style={[ size, props.style ]}>
       {props.children}
     </Text>
   );
 };
 
 const styles = {
-  textStyle: {
+  bigTextStyle: {
     fontSize: 20
+  },
+  
+  smallTextSyle: {
+    fontSize: 15
   }
 }
 

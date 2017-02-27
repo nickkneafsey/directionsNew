@@ -10,7 +10,7 @@ const basicDirections = [
     correctAnswer: [ 2 ]
   },
   {
-    emojis: [ "black_circle", "white_circle", "white_circle", "black_circle", "black_circle", "black_circle", "white_circle" ],
+    emojis: [ "black_circle", "white_circle", "black_circle", "white_circle", "black_circle", "black_circle" ],
     directions: "Touch the last black circle",
     correctAnswer: [ 5 ]
   },
