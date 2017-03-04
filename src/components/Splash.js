@@ -12,7 +12,7 @@ class Splash extends Component {
     return (
       <View style={styles.main}>
         <View style={styles.bgImageWrapper}>
-          <Image source={require('../../assets/fingersdark.jpg')} style={styles.bgImage} />
+          <Image source={require('../../assets/pencils.jpg')} style={styles.bgImage} />
         </View>
         <Text></Text>
         <Text style={styles.welcome}>TapAlong!</Text>
@@ -38,7 +38,7 @@ const styles = {
   },
   bgImage: {
     flex: 1,
-    resizeMode: 'repeat',
+    resizeMode: 'cover',
     // 'cover', 'contain', 'stretch', 'repeat', 'center'
   },
   welcome: {

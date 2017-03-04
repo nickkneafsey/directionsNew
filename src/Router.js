@@ -1,5 +1,5 @@
 import React from 'react';
-import { Scene, Router, Actions } from 'react-native-router-flux'
+import { Scene, Router, Actions } from 'react-native-router-flux';
 import AgeMenu from './components/AgeMenu';
 import TopicMenu from './components/TopicMenu';
 import Game from './components/Game';
@@ -10,6 +10,7 @@ const RouterComponent = () => (
     sceneStyle={{ paddingTop: 65 }}
     navigationBarStyle={styles.navBar}
     titleStyle={styles.navBarTitle}
+
     barButtonTextStyle={styles.barButtonTextStyle}
     barButtonIconStyle={styles.barButtonIconStyle}
     hideNavBar={false}>
@@ -50,13 +51,13 @@ const styles = {
     backgroundColor:'#202020',
   },
   navBarTitle:{
-    color:'white'
+    color:'white',
   },
   barButtonTextStyle:{
-    color:'white'
+    color:'white',
   },
   barButtonIconStyle:{
-    tintColor:'white'
+    tintColor:'white',
   }
 }
 

@@ -3,7 +3,7 @@ import { View } from 'react-native';
 import _ from 'lodash';
 import { CardSection, BigText } from './common';
 import DonutChart from './DonutChart';
-import Emoji from 'react-native-emoji';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 class ScorePage extends Component {
   calculateScore(score, total) {
@@ -20,27 +20,17 @@ class ScorePage extends Component {
         <View>
           <BigText style={{ fontSize: 65, textAlign: 'center' }}> </BigText>
           <BigText style={{ fontSize: 65, textAlign: 'center' }}>
-             <Emoji name={'tada'} />
-             <Emoji name={'tada'} />
-             <Emoji name={'tada'} />
-          </BigText>
-          <BigText style={{ fontSize: 65, textAlign: 'center' }}>
-             <Emoji name={'100'} />
-             <Emoji name={'100'} />
-             <Emoji name={'100'} />
+             <Icon name={'thumbs-up'} size={100} color={'red'} styles={styles.IconStyles} />
+             <Icon name={'thumbs-up'} size={100} color={'red'} styles={styles.IconStyles} />
+             <Icon name={'thumbs-up'} size={100} color={'red'} styles={styles.IconStyles} />
           </BigText>
           <BigText style={{ fontSize: 65, textAlign: 'center' }}>
              { this.generatePraise() }
           </BigText>
           <BigText style={{ fontSize: 65, textAlign: 'center' }}>
-             <Emoji name={'100'} />
-             <Emoji name={'100'} />
-             <Emoji name={'100'} />
-          </BigText>
-          <BigText style={{ fontSize: 65, textAlign: 'center' }}>
-             <Emoji name={'tada'} />
-             <Emoji name={'tada'} />
-             <Emoji name={'tada'} />
+             <Icon name={'thumbs-up'} size={100} color={'red'} styles={styles.IconStyles} />
+             <Icon name={'thumbs-up'} size={100} color={'red'} styles={styles.IconStyles} />
+             <Icon name={'thumbs-up'} size={100} color={'red'} styles={styles.IconStyles} />
           </BigText>
         </View>
       )
@@ -88,6 +78,9 @@ const styles = {
     fontSize: 65,
     textAlign: 'center',
     fontFamily: 'Futura'
+  },
+  iconStyles: {
+    padding: 5
   }
 }
 

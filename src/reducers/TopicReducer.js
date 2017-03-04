@@ -31,7 +31,7 @@ const determineSagas = (topic) => {
       sagas = Sagas['sequences'];
       break;
     case "Basic Directions":
-      sagas = Sagas['basicDirections'];
+      sagas = Sagas['iconBasicDirections'];
       break;
     case "Above and Below":
       sagas = Sagas['aboveAndBelow'];

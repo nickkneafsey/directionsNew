@@ -6,7 +6,7 @@ import { Actions } from 'react-native-router-flux';
 import Emoji from 'react-native-emoji';
 import Speech from 'react-native-speech';
 import { CardSection, Button, BigText } from './common';
-import TouchableEmoji from './TouchableEmoji';
+import TouchableIcon from './TouchableIcon';
 import SelectionsRow from './SelectionsRow';
 import { vh } from '../utility/StyleUtility';
 import ScorePage from './ScorePage';
@@ -131,20 +131,20 @@ class Game extends Component {
             <BigText>
               {`${this.props.sagas[i].directions} `}
             </BigText>
-            <TouchableEmoji
-              name={'arrows_counterclockwise'}
-              onEmojiPress={this.onRepeatButtonPress.bind(this)}
+            <TouchableIcon
+              name={'rocket'}
+              onIconPress={this.onRepeatButtonPress.bind(this)}
               />
           </CardSection>
           {
             this.props.sagas[i].emojis.map((emojiName, iterator) => {
               return (
-                <TouchableEmoji
+                <TouchableIcon
                   key={iterator}
                   index={iterator}
                   name={emojiName}
                   emojiHeight={emojiHeight}
-                  onEmojiPress={this.onEmojiPress.bind(this)}
+                  onIconPress={this.onEmojiPress.bind(this)}
                   />
               )
             })
