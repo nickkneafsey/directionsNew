@@ -35,7 +35,7 @@ const basicDirections = [
     correctAnswer: [ 2 ]
   },
   {
-    emojis: [ "roller_coaster", "carousel_horse", "admission_tickets", "ferris_wheel", "circus_tent" ],
+    emojis: [ "roller_coaster", "carousel_horse", "tickets", "ferris_wheel", "circus_tent" ],
     directions: "Touch the tickets",
     correctAnswer: [ 2 ]
   },
@@ -50,7 +50,7 @@ const basicDirections = [
     correctAnswer: [ 2 ]
   },
   {
-    emojis: [ "movie_camera", "popcorn", "candy", "admission_tickets", "film_frames" ],
+    emojis: [ "movie_camera", "popcorn", "candy", "tickets", "film_frames" ],
     directions: "Touch the popcorn.",
     correctAnswer: [ 1 ]
   },
@@ -60,7 +60,7 @@ const basicDirections = [
     correctAnswer: [ 4 ]
   },
   {
-    emojis: [ "scissors", "lower_left_crayon", "pencil2", "notebook" ],
+    emojis: [ "scissors", "crayon", "pencil2", "notebook" ],
     directions: "Touch the pencil.",
     correctAnswer: [ 2 ]
   },
@@ -86,7 +86,7 @@ const basicDirections = [
     correctAnswer: [ 2 ]
   },
   {
-    emojis: [ "hankey", "alien", "hankey", "alien" ],
+    emojis: [ "poop", "alien", "poop", "alien" ],
     directions: "Touch the last alien.",
     correctAnswer: [ 3 ]
   },
@@ -141,7 +141,7 @@ const basicDirections = [
     correctAnswer: [ 0, 2, 4 ]
   },
   {
-    emojis: [ "large_blue_circle", "large_blue_diamond", "red_circle", "large_blue_circle", "small_red_triangle" ],
+    emojis: [ "blue_circle", "large_blue_diamond", "red_circle", "blue_circle", "small_red_triangle" ],
     directions: "Touch all of the circles from top to bottom.",
     correctAnswer: [ 0, 2, 3 ]
   },
@@ -156,7 +156,7 @@ const basicDirections = [
     correctAnswer: [ 0, 2 ]
   },
   {
-    emojis: [ "large_blue_circle", "large_blue_diamond", "red_circle", "large_blue_circle", "small_red_triangle" ],
+    emojis: [ "blue_circle", "large_blue_diamond", "red_circle", "blue_circle", "small_red_triangle" ],
     directions: "Touch all of the circles from top to bottom.",
     correctAnswer: [ 0, 2, 3 ]
   },

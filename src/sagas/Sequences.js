@@ -1,11 +1,11 @@
 const sequences =  [
   {
-    emojis: [ "evergreen_tree", "hot_pepper", "palm_tree", "tornado", "deciduous_tree" ],
+    emojis: [ "evergreen_tree", "hot_pepper", "palm_tree", "cloud_tornado", "deciduous_tree" ],
     directions: "Touch all of the trees from top to bottom",
     correctAnswer: [ 0, 2, 4 ]
   },
   {
-    emojis: [ "star2", "rain_cloud", "sun_with_face", "snow_cloud", "lightning" ],
+    emojis: [ "star2", "cloud_rain", "sun_with_face", "cloud_snow", "cloud_lightning" ],
     directions: "First touch the sun, then touch the star.",
     correctAnswer: [ 2, 0 ]
   },
@@ -40,7 +40,7 @@ const sequences =  [
     correctAnswer: [ 1, 3, 4 ]
   },
   {
-    emojis: [ "red_circle", "hankey", "spider",  "joy", "hankey" ],
+    emojis: [ "red_circle", "poop", "spider",  "joy", "poop" ],
     directions: "Touch all of the poopies from top to bottom.",
     correctAnswer: [ 1, 4 ]
   },
@@ -80,7 +80,7 @@ const sequences =  [
     correctAnswer: [ 1, 0 ]
   },
   {
-    emojis: [ "flag-us", "see_no_evil", "flag-ca", "hear_no_evil", "flag-br" ],
+    emojis: [ "flag_us", "see_no_evil", "flag_ca", "hear_no_evil", "flag_br" ],
     directions: "Touch the flags from the bottom to the top.",
     correctAnswer: [ 4, 2, 0 ]
   },
@@ -120,7 +120,7 @@ const sequences =  [
     correctAnswer: [ 2, 3 ]
   },
   {
-    emojis: [ "facepunch", "ok_hand", "wave", "+1" ],
+    emojis: [ "punch", "ok_hand", "wave", "thumbsup" ],
     directions: "Touch the thumbs up, then touch the fist.",
     correctAnswer: [ 3, 0 ]
   },
@@ -135,7 +135,7 @@ const sequences =  [
     correctAnswer: [ 0, 2, 1, 3 ]
   },
   {
-    emojis: [ "lower_left_crayon", "linked_paperclips", "lower_left_crayon", "linked_paperclips" ],
+    emojis: [ "crayon", "paperclip", "crayon", "paperclip" ],
     directions: "Touch both of the paper clips from top to bottom, then touch the second crayon.",
     correctAnswer: [ 1, 3, 2 ]
   },
@@ -180,7 +180,7 @@ const sequences =  [
     correctAnswer: [ 4, 0, 0 ]
   },
   {
-    emojis: [ "sun_with_face", "last_quarter_moon_with_face", "star2", "rain_cloud" ],
+    emojis: [ "sun_with_face", "last_quarter_moon_with_face", "star2", "cloud_rain" ],
     directions: "First, touch the moon two times. Next, touch the rain cloud.",
     correctAnswer: [ 1, 1, 3 ]
   },

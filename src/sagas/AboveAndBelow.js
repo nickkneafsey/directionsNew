@@ -20,7 +20,7 @@ const aboveAndBelow =  [
     correctAnswer: [ 1 ]
   },
   {
-    emojis: [ "hankey", "alien", "hankey", "alien" ],
+    emojis: [ "poop", "alien", "poop", "alien" ],
     directions: "Touch the item above the second poop.",
     correctAnswer: [ 1 ]
   },
@@ -60,12 +60,12 @@ const aboveAndBelow =  [
     correctAnswer: [ 2 ]
   },
   {
-    emojis: [ "+1", "ok_hand", "-1", "point_down" ],
+    emojis: [ "thumbsup", "ok_hand", "thumbsdown", "point_down" ],
     directions: "Touch the hand below the thumbs up sign.",
     correctAnswer: [ 1 ]
   },
   {
-    emojis: [ "lower_left_crayon", "lower_left_paintbrush", "lower_left_ballpoint_pen", "lower_left_fountain_pen" ],
+    emojis: [ "crayon", "paintbrush", "pen_ballpoint", "pen_fountain" ],
     directions: "Touch the item below the crayon.",
     correctAnswer: [ 1 ]
   },
@@ -90,22 +90,22 @@ const aboveAndBelow =  [
     correctAnswer: [ 1 ]
   },
   {
-    emojis: [ "file_cabinet", "card_file_box", "spiral_note_pad", "printer", "wastebasket" ],
+    emojis: [ "file_cabinet", "card_box", "notepad_spiral", "printer", "wastebasket" ],
     directions: "Touch the item in the sequence that is above the trash can.",
     correctAnswer: [ 3 ]
   },
   {
-    emojis: [ "scissors", "lower_left_crayon", "pencil2", "notebook" ],
+    emojis: [ "scissors", "crayon", "pencil2", "notebook" ],
     directions: "Touch the item below the crayon.",
     correctAnswer: [ 2 ]
   },
   {
-    emojis: [ "orange_book", "lower_left_crayon", "paperclip", "straight_ruler" ],
+    emojis: [ "orange_book", "crayon", "paperclip", "straight_ruler" ],
     directions: "Touch the item below the paper clip.",
     correctAnswer: [ 3 ]
   },
   {
-    emojis: [ "truck", "derelict_house_building", "construction", "straight_ruler" ],
+    emojis: [ "truck", "house_abandoned", "construction", "straight_ruler" ],
     directions: "Touch the item below the house.",
     correctAnswer: [ 2 ]
   },
@@ -165,7 +165,7 @@ const aboveAndBelow =  [
     correctAnswer: [ 0, 3 ]
   },
   {
-    emojis: [ "surfer", "runner", "horse_racing", "weight_lifter", "golfer" ],
+    emojis: [ "surfer", "runner", "horse_racing", "lifter", "golfer" ],
     directions: "Touch the person below the surfer. After that touch the person above the golfer.",
     correctAnswer: [ 1, 3 ]
   },
@@ -175,7 +175,7 @@ const aboveAndBelow =  [
     correctAnswer: [ 3 ]
   },
   {
-    emojis: [ "large_blue_circle", "large_blue_diamond", "red_circle", "large_blue_circle", "small_red_triangle" ],
+    emojis: [ "blue_circle", "large_blue_diamond", "red_circle", "blue_circle", "small_red_triangle" ],
     directions: "Touch the shape below the last circle.",
     correctAnswer: [ 4 ]
   },
@@ -225,7 +225,7 @@ const aboveAndBelow =  [
     correctAnswer: [ 0, 1 ]
   },
   {
-    emojis: [ "sun_with_face", "last_quarter_moon_with_face", "star2", "rain_cloud" ],
+    emojis: [ "sun_with_face", "last_quarter_moon_with_face", "star2", "cloud_rain" ],
     directions: "Touch the sun after you touch the item below the moon.",
     correctAnswer: [ 2, 0 ]
   },

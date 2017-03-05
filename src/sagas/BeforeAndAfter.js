@@ -10,7 +10,7 @@ const beforeAndAfter =  [
     correctAnswer: [ 3, 2 ]
   },
   {
-    emojis: [ "lower_left_crayon", "linked_paperclips", "lower_left_crayon", "linked_paperclips" ],
+    emojis: [ "crayon", "paperclip", "crayon", "paperclip" ],
     directions: "Touch all of the crayons from top to bottom. After that, touch all of the paper clips from top to bottom.",
     correctAnswer: [ 0, 2, 1, 3 ]
   },
@@ -70,7 +70,7 @@ const beforeAndAfter =  [
     correctAnswer: [ 0, 2 ]
   },
   {
-    emojis: [ "snowflake", "snowman", "lightning", "skier" ],
+    emojis: [ "snowflake", "snowman", "cloud_lightning", "skier" ],
     directions: "Before you touch the snow man, touch the snow flake.",
     correctAnswer: [ 0, 1 ]
   },
@@ -90,12 +90,12 @@ const beforeAndAfter =  [
     correctAnswer: [ 2, 1 ]
   },
   {
-    emojis: [ "surfer", "runner", "horse_racing", "weight_lifter", "golfer" ],
+    emojis: [ "surfer", "runner", "horse_racing", "lifter", "golfer" ],
     directions: "Touch the golfer before you touch the weight lifter.",
     correctAnswer: [ 4, 3 ]
   },
   {
-    emojis: [ "roller_coaster", "carousel_horse", "admission_tickets", "ferris_wheel", "circus_tent" ],
+    emojis: [ "roller_coaster", "carousel_horse", "tickets", "ferris_wheel", "circus_tent" ],
     directions: "After you touch the horse, touch the ferris wheel.",
     correctAnswer: [ 1, 3 ]
   },
@@ -110,7 +110,7 @@ const beforeAndAfter =  [
     correctAnswer: [ 2, 1 ]
   },
   {
-    emojis: [ "movie_camera", "popcorn", "candy", "admission_tickets", "film_frames" ],
+    emojis: [ "movie_camera", "popcorn", "candy", "tickets", "film_frames" ],
     directions: "After you touch the candy, touch the popcorn.",
     correctAnswer: [ 2, 1 ]
   },
@@ -120,7 +120,7 @@ const beforeAndAfter =  [
     correctAnswer: [ 2, 1 ]
   },
   {
-    emojis: [ "scissors", "lower_left_crayon", "pencil2", "notebook" ],
+    emojis: [ "scissors", "crayon", "pencil2", "notebook" ],
     directions: "After you touch the crayon, touch the pencil.",
     correctAnswer: [ 1, 2 ]
   },
@@ -135,7 +135,7 @@ const beforeAndAfter =  [
     correctAnswer: [ 0, 2 ]
   },
   {
-    emojis: [ "red_circle", "red_circle", "large_blue_circle", "large_blue_circle", "black_circle" ],
+    emojis: [ "red_circle", "red_circle", "blue_circle", "blue_circle", "black_circle" ],
     directions: "Touch the first red circle after you touch the last blue circle.",
     correctAnswer: [ 3, 0 ]
   },
@@ -231,12 +231,12 @@ const beforeAndAfter =  [
     correctAnswer: [ 1, 3 ]
   },
   {
-    emojis: [ "sun_with_face", "last_quarter_moon_with_face", "star2", "rain_cloud" ],
+    emojis: [ "sun_with_face", "last_quarter_moon_with_face", "star2", "cloud_rain" ],
     directions: "Touch the moon three times after touching the rain cloud.",
     correctAnswer: [ 3, 1, 1, 1 ]
   },
   {
-    emojis: [ "rain_cloud", "sun_with_face", "last_quarter_moon_with_face", "star2" ],
+    emojis: [ "cloud_rain", "sun_with_face", "last_quarter_moon_with_face", "star2" ],
     directions: "Touch the sun before you touch the moon. After that, touch the star.",
     correctAnswer: [ 1, 2, 3 ]
   },

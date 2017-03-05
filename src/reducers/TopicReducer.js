@@ -5,7 +5,7 @@ import * as Sagas from '../sagas'
 import _ from 'lodash'
 
 const INITIAL_STATE = {
-  topics: [ "Basic Directions", "Before and After", "Sequences", "Above and Below", "All Topics" ],
+  topics: [ "Basic Directions", "Before and After", "Sequences", "Above and Below", "All Topics", "Every" ],
   selectedTopic: "",
   sagas: []
 }
