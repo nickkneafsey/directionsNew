@@ -1,17 +1,18 @@
 import React from 'react';
-import { TouchableOpacity, Text, Image, View } from 'react-native';
-import { findEmojiUnicode } from '../utility/emojiOneHelper'
-// import emojione from 'emojione';
-const TouchableEmoji = (props) => {
-  let emojiUnicode = findEmojiUnicode(props.name)
-  var image = `${emojiUnicode}.png`;
-  console.log(props.emojiHeight)
+import { TouchableOpacity, Text } from 'react-native';
+import { findEmojiUnicode } from '../utility/emojiOneHelper';
+import Emoji from './Emoji';
 
+
+const TouchableEmoji = (props) => {
   return (
     <TouchableOpacity
       style={props.style}
       onPress={ () => props.onEmojiPress(props.index) }>
-      <Image source={{uri: image}} style={{ height: props.emojiHeight, width: props.emojiHeight, justifyContent: 'center', alignItems: 'center', }}  />
+      <Emoji
+        emojiHeight={props.emojiHeight}
+        name={props.name}
+        />
     </TouchableOpacity>
   )
 };

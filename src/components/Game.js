@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { View, ScrollView } from 'react-native';
 import _ from 'lodash';
 import { Actions } from 'react-native-router-flux';
-import Emoji from 'react-native-emoji';
 import Speech from 'react-native-speech';
 import { CardSection, Button, BigText } from './common';
 import TouchableEmoji from './TouchableEmoji';
