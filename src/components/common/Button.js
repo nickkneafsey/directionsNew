@@ -29,7 +29,10 @@ const styles = {
     borderWidth: 1,
     borderColor: 'black',
     marginLeft: 5,
-    marginRight: 5
+    marginRight: 5,
+
+    justifyContent: 'center',
+    alignItems: 'center',
   }
 }
 

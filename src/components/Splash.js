@@ -12,7 +12,7 @@ class Splash extends Component {
     return (
       <View style={styles.main}>
         <View style={styles.bgImageWrapper}>
-          <Image source={require('../../assets/fingersdark.jpg')} style={styles.bgImage} />
+          <Image source={require('../../assets/fingers_big_dark_wide.png')} style={styles.bgImage} />
         </View>
         <Text></Text>
         <Text style={styles.welcome}>TapAlong!</Text>
