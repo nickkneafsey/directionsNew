@@ -19,16 +19,6 @@ import {
 } from '../actions/GameActions';
 
 class Game extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      x: 0,
-      y: 0,
-      height: 0,
-      width: 0
-    };
-  }
-
   componentWillReceiveProps(nextProps) {
     // Check if it is a new question and if we are past the last saga
     if (this.props.i !== nextProps.i && (nextProps.i !== this.props.sagas.length)) {
@@ -108,11 +98,6 @@ class Game extends Component {
     this.speak(sagas[i].directions);
   }
 
-  onLayout(event) {
-    const { x, y, width, height } = event.nativeEvent.layout;
-    this.setState({ x, y, width, height })
-  }
-
   // TODO fix the key below as it is bad practice
   render() {
     const { i, score } = this.props;
@@ -120,8 +105,6 @@ class Game extends Component {
     if (i === this.props.sagas.length) {
       return <ScorePage score={score} total={this.props.sagas.length} />
     }
-
-    const emojiHeight = (this.state.height) / (this.props.sagas[i].emojis.length + 2);
 
     return (
       <View style={{flex: 1}}>

@@ -16,6 +16,7 @@ class Splash extends Component {
         </View>
         <Text></Text>
         <Text style={styles.welcome}>TapAlong!</Text>
+        <Text style={styles.emojiCredit}>Emojis provided free by EmojiOne</Text>
         <CardSection style={styles.buttonContanerStyle}>
           <Button onPress={this.navigate.bind(this)}>Start</Button>
         </CardSection>
@@ -46,7 +47,13 @@ const styles = {
     margin: 10,
     fontSize: 40,
     backgroundColor: 'rgba(0,0,0,0)',
-    color: 'white'
+    color: 'white',
+    fontFamily: 'Futura'
+  },
+  emojiCredit: {
+    backgroundColor: 'rgba(0,0,0,0)',
+    color: 'white',
+    fontFamily: 'Futura'
   },
   buttonContanerStyle: {
     backgroundColor: 'rgba(0,0,0,0)',

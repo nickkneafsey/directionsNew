@@ -3,7 +3,7 @@ import { View } from 'react-native';
 import _ from 'lodash';
 import { CardSection, BigText } from './common';
 import DonutChart from './DonutChart';
-import Emoji from 'react-native-emoji';
+import Emoji from './Emoji';
 
 class ScorePage extends Component {
   calculateScore(score, total) {
@@ -17,31 +17,30 @@ class ScorePage extends Component {
   renderChartOrEmoji(score, total, data) {
     if (score === total) {
       return (
-        <View>
-          <BigText style={{ fontSize: 65, textAlign: 'center' }}> </BigText>
-          <BigText style={{ fontSize: 65, textAlign: 'center' }}>
-             <Emoji name={'tada'} />
-             <Emoji name={'tada'} />
-             <Emoji name={'tada'} />
-          </BigText>
-          <BigText style={{ fontSize: 65, textAlign: 'center' }}>
-             <Emoji name={'100'} />
-             <Emoji name={'100'} />
-             <Emoji name={'100'} />
-          </BigText>
-          <BigText style={{ fontSize: 65, textAlign: 'center' }}>
+        <View style={{ flex: 1 }}>
+          <View style={[styles.displayInline, {flex: 1}]}>
+             <Emoji name={'tada'} styles={{ height: 75, width: 75 }} />
+             <Emoji name={'tada'} styles={{ height: 75, width: 75 }} />
+             <Emoji name={'tada'} styles={{ height: 75, width: 75 }} />
+          </View>
+          <View style={[styles.displayInline, {flex: 1}]}>
+             <Emoji name={'100'} styles={{ height: 75, width: 75 }} />
+             <Emoji name={'100'} styles={{ height: 75, width: 75 }} />
+             <Emoji name={'100'} styles={{ height: 75, width: 75 }} />
+          </View>
+          <BigText style={styles.textStyles}>
              { this.generatePraise() }
           </BigText>
-          <BigText style={{ fontSize: 65, textAlign: 'center' }}>
-             <Emoji name={'100'} />
-             <Emoji name={'100'} />
-             <Emoji name={'100'} />
-          </BigText>
-          <BigText style={{ fontSize: 65, textAlign: 'center' }}>
-             <Emoji name={'tada'} />
-             <Emoji name={'tada'} />
-             <Emoji name={'tada'} />
-          </BigText>
+          <View style={[styles.displayInline, {flex: 1}]}>
+             <Emoji name={'100'} styles={{ height: 75, width: 75 }} />
+             <Emoji name={'100'} styles={{ height: 75, width: 75 }} />
+             <Emoji name={'100'} styles={{ height: 75, width: 75 }} />
+          </View>
+          <View style={[styles.displayInline, {flex: 1}]}>
+             <Emoji name={'tada'} styles={{ height: 75, width: 75 }} />
+             <Emoji name={'tada'} styles={{ height: 75, width: 75 }} />
+             <Emoji name={'tada'} styles={{ height: 75, width: 75 }} />
+          </View>
         </View>
       )
     } else {
@@ -68,7 +67,7 @@ class ScorePage extends Component {
     ];
 
     return (
-      <View>
+      <View style={{ flex: 1 }}>
         <CardSection>
           <BigText>{`Score: ${score} out of ${total}`}</BigText>
         </CardSection>
@@ -88,6 +87,12 @@ const styles = {
     fontSize: 65,
     textAlign: 'center',
     fontFamily: 'Futura'
+  },
+  displayInline: {
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection:'row',
   }
 }
 
