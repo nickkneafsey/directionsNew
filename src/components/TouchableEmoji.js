@@ -7,10 +7,10 @@ import Emoji from './Emoji';
 const TouchableEmoji = (props) => {
   return (
     <TouchableOpacity
-      style={props.style}
+      style={{ flex: 1, ...props.styles }}
       onPress={ () => props.onEmojiPress(props.index) }>
       <Emoji
-        emojiHeight={props.emojiHeight}
+        styles={{flex: 1}}
         name={props.name}
         />
     </TouchableOpacity>

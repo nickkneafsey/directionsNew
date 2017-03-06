@@ -26,11 +26,10 @@ class SelectionsRow extends Component {
 
     return (
       <View
-        style={styles.displayInline}>
+        style={[styles.displayInline, { flex: 2 }]}>
         {
           selections.map((selection, i) => {
-            console.log("Height", this.state.height)
-            return <Emoji key={i} name={this.props.emojis[selection]} emojiHeight={this.state.height} />
+            return <Emoji key={i} name={this.props.emojis[selection]} styles={{ height: this.state.height, width: this.state.height }}/>
           })
         }
       </View>
@@ -42,9 +41,9 @@ class SelectionsRow extends Component {
     return (
       <View
         onLayout={this.onLayout.bind(this)}
-        style={styles.displayInline}
+        style={[styles.displayInline, { flex: 1 }]}
       >
-        <BigText>
+        <BigText style={{ flex: 1 }}>
           { `Your Answers: `}
         </BigText>
         {

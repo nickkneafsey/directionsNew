@@ -125,9 +125,13 @@ class Game extends Component {
 
     return (
       <View style={{flex: 1}}>
-        <ScrollView onLayout={this.onLayout.bind(this)}>
-          <CardSection>
-            <BigText>
+        <View style={{flex: 8}}>
+          <CardSection style={{
+            flexWrap: 'wrap',
+            alignItems: 'flex-start',
+            flexDirection:'row',
+          }}>
+            <BigText style={{ flex: 4 }}>
               {`${this.props.sagas[i].directions} `}
             </BigText>
             <TouchableEmoji
@@ -142,20 +146,19 @@ class Game extends Component {
                   key={iterator}
                   index={iterator}
                   name={emojiName}
-                  emojiHeight={emojiHeight}
                   onEmojiPress={this.onEmojiPress.bind(this)}
                   />
               )
             })
           }
-        </ScrollView>
-        <CardSection>
+        </View>
+        <CardSection style={{flex: 0.3}}>
           <SelectionsRow
             selections={this.props.answerArray}
             emojis={this.props.sagas[i].emojis}
           />
         </CardSection>
-        <CardSection>
+        <CardSection style={{flex: 1}}>
           <Button onPress={this.props.clearAnswerArray.bind(this)}>
             Reset Answers
           </Button>
