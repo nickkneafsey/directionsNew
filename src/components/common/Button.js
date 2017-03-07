@@ -18,8 +18,8 @@ const styles = {
     color: 'white',
     fontSize: 20,
     fontWeight: '600',
-    paddingTop: 15,
-    paddingBottom: 15
+    paddingTop: 10,
+    paddingBottom: 10
   },
   buttonStyle: {
     flex: 1,
